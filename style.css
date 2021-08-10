@@ -1,11 +1,73 @@
-*,
-*::after {
+/*Styles généraux*/
+
+*
+ {
   box-sizing: border-box;
 }
 
-*
+p, h1, h2
+
 {
-font-family: 'Shrikhand', cursive;
+
+  font-family: 'Roboto', sans-serif; /*Police Texte utilisé Roboto Medium 500*/
+}
+
+/*SEO*/
+
+.title_website 
+{
+  display: none;
+  font-family: 'Shrikhand', cursive; /*Police Logo et titres utilisés Shrikhand Regular 400*/
+}
+
+
+/*Header*/
+
+header
+{
+box-shadow: 10px 10px 10px 10px;
+}
+
+.logo-website
+{
+margin-top: 20px;
+width: 170px;
+height: 30px;
+margin-left: 106px;
+margin-right: 106px;
+background-color: #FFFFFF;
+margin-bottom: 10px;
+}
+
+.localization-town
+{
+  display: flex;
+  background-color: #eaeaea;
+  width: 100%; /*Voir pour un 375px*/
+}
+
+.localization-town span
+
+{
+  margin-left: 104px;
+}
+
+.localization-town p 
+
+{
+  margin-left: 20px;
+}
+
+.fa-map-marker-alt
+{
+  line-height: 40px;
+}
+
+/*Footer*/
+
+.title_website-footer
+{
+  font-family: 'Shrikhand', cursive;
 }
 
 
@@ -29,3 +91,6 @@ font-family: 'Shrikhand', cursive;
 
 
 }
+
+
+
