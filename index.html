@@ -2,38 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
+
+    <link rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https : //fonts.googleapis.com/css2? family= Shrikhand & display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https : //fonts.googleapis.com/css2? family= Roboto:wght@500 & display=swap"
-      rel="stylesheet"
-    />
+      crossorigin="anonymous"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https : //fonts.googleapis.com/css2? family= Roboto & display=swap" rel="stylesheet">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Accueil Ohmyfood</title>
   </head>
   <body>
-    <div>
+    <div class="bloc_page">
       <header>
         <!--Emplacement de la balise Header-->
 
         <h1 class="title_website">ohmyfood</h1>
 
-        <img   class="logo-website"   src="images/ohmyfood.png" alt="Logo entreprise ohmyfood" />
+        <img
+          class="logo-website"
+          src="images/ohmyfood.png"
+          alt="Logo entreprise ohmyfood"
+        />
 
-        <nav></nav> <!--Menu navigation desktop-->
+        <nav></nav>
+        <!--Menu navigation desktop-->
       </header>
 
       <div class="localization-town">
@@ -48,19 +49,21 @@
 
         <h1 class="title-baseline">Réservez le menu qui</h1>
         <h1 class="line-title">vous convient</h1>
-        
-        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
 
-        <button >Explorer nos restaurants</button>
+        <p>
+          Découvrez des restaurants d'exception, sélectionnés par nos soins.
+        </p>
+
+        <button>Explorer nos restaurants</button>
       </aside>
 
       <section class="functioning">
         <!-- Balise pour fonctionnement pour utilisateur -->
-          <h1>Fonctionnement</h1>
+        <h1>Fonctionnement</h1>
         <div>
           <button class="button-grey">
             <p class="button-number">1</p>
-           <i class="fas fa-mobile-alt"></i>
+            <i class="fas fa-mobile-alt"></i>
             <p class="button-txt">Choisissez un restaurant</p>
           </button>
         </div>
@@ -68,7 +71,7 @@
         <div>
           <button class="button-grey">
             <p class="button-number">2</p>
-         <i class="fas fa-list"></i>
+            <i class="fas fa-list"></i>
             <p class="button-txt">Composez votre menu</p>
           </button>
         </div>
@@ -77,7 +80,7 @@
           <button class="button-purple">
             <p class="button-number">3</p>
 
-           <i class="fas fa-store"></i>
+            <i class="fas fa-store"></i>
             <p class="button-txt">Dégustez au restaurant</p>
           </button>
         </div>
@@ -118,7 +121,8 @@
             <p class="restaurant-new">Nouveau</p>
 
             <div class="restaurant-txt">
-              <p class="restaurant-txt-bold">La note enchantée</p> <!--Voir pour le cursor pointeur-->
+              <p class="restaurant-txt-bold">La note enchantée</p>
+              <!--Voir pour le cursor pointeur-->
               <p class="txt_city">Charonne</p>
               <i class="far fa-heart"></i>
             </div>
@@ -132,7 +136,7 @@
               alt="Restaurant Cité Rouge A la française"
             />
 
-            <div class="restaurant-txt">
+            <div class="restaurant-text">
               <p class="restaurant-txt-bold">A la française</p>
               <p class="txt_city">Cité Rouge</p>
               <i class="far fa-heart"></i>
@@ -147,7 +151,7 @@
               alt="Restaurant Le délice du sens Folie-Méricourt"
             />
 
-            <div class="restaurant-txt">
+            <div class="restaurant-text">
               <p class="restaurant-txt-bold">Le délice du sens</p>
               <p class="txt_city">Folie-Méricourt</p>
               <i class="far fa-heart"></i>
@@ -160,32 +164,38 @@
       <footer>
         <!-- Bloc Pied de page -->
 
-        <h1 class="title_website-footer">ohmyfood</h1>
+        <div class="img_footer">
+          <a href="#">
+            <img src="images/ohmyfood.png" alt="Logo entreprise Ohmyfood" />
+          </a>
+        </div>
 
         <div>
           <!-- Englobe dans pied de page  -->
 
-          <div>
-            <a href="#">
+          <div class="restaurant-offering">
+            <a class="footer_link" href="#">
               <span>
                 <i class="fas fa-utensils"></i>
               </span>
-              <p>Proposer un restaurant</p>
+              Proposer un restaurant
             </a>
           </div>
 
-          <div>
-            <a href="#">
+          <div class="restaurant-offering">
+            <a class="footer_link" href="#">
               <span>
                 <i class="fas fa-hands-helping"></i>
               </span>
-              <p>Devenir un partenaire</p>
+              Devenir un partenaire
             </a>
           </div>
 
-          <a href="#">Mentions légales</a>
+          <div><a class="footer_link" href="#">Mentions légales</a>
+          </div>
 
-          <a href="#">Contact</a>
+          <div><a class="footer_link" href="#">Contact</a>
+          </div>
         </div>
       </footer>
     </div>

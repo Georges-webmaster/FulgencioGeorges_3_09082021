@@ -1,4 +1,12 @@
+
+
 /*Styles généraux*/
+
+.bloc_page
+{
+  margin: 0 auto;
+    width: 100%;
+}
 
 * {
   box-sizing: border-box;
@@ -7,20 +15,23 @@
 p,
 h1,
 h2 {
-  font-family: "Roboto", sans-serif; /*Police Texte utilisé Roboto Medium 500*/
+  font-family: "Roboto", sans-serif; /*Police Texte utilisé Roboto Regular 400*/
 }
 
 /*SEO*/
 
 .title_website {
   display: none;
-  font-family: "Shrikhand", cursive; /*Police Logo et titres utilisés Shrikhand Regular 400*/
+  font-family: 'Shrikhand', cursive; /*Police Logo et titres utilisés Shrikhand Regular 400*/
 }
+
+@media only screen and (min-width: 375px) {
 
 /*Header*/
 
 header {
-  box-shadow: 0px 0px 10px 0px; /*Ombre à revoir*/
+  box-shadow: 10px 10px 0px 0px;
+ /*Ombre à revoir*/
 }
 
 .logo-website {
@@ -76,8 +87,7 @@ header {
 
 .baseline p {
   margin-left: 40px;
-  color: #353535;
-  font-size: large;
+  font-weight: lighter;
   margin-bottom: 40px;
 }
 
@@ -109,11 +119,13 @@ header {
   display: flex;
   margin-left: 30px;
   margin-bottom: 25px;
+  
 }
 
 .button-grey {
   border: 20px;
   border-radius: 20px;
+  background-color: #f6f6f6;
   width: 320px;
   height: 70px;
 }
@@ -122,7 +134,7 @@ header {
   width: 25px;
   height: 25px;
   border-radius: 30px;
-  background-color: #9356dc;
+  background-color: #9356DC;
   margin-left: -14px;
   line-height: 25px;
   margin-top: 23px;
@@ -174,6 +186,7 @@ header {
 
 .restaurant {
   height: 1300px;
+  width: 100%;
   background-color: #f6f6f6;
 }
 
@@ -207,6 +220,7 @@ header {
   padding-left: 10px;
   background-color: #99e2d0;
   border-radius: 5px;
+  color: #139273;
 }
 .restaurant-txt {
   margin-left: 15px;
@@ -228,15 +242,77 @@ header {
   font-size: 25px;
 }
 
+.restaurant-text
+
+{
+  margin-left: 15px;
+  margin-top: 0px;
+}
+
 /*Footer*/
 
 footer {
   background-color: #353535;
+  width: 100%;
+  height: 195px;
 }
 
-.title_website-footer {
-  font-family: "Shrikhand", cursive;
+.img_footer img {
+  width: 110px;
+padding-bottom: 10px;
+  margin-left: 25px;
+  padding-top: 25px;
+  
 }
 
-@media only screen and (max-width: 375px) {
+.restaurant-offering
+{
+  display: flex;
+  margin-left: -1px;
+}
+
+.fa-utensils, .fa-hands-helping
+
+{
+  margin-right: 10px;
+}
+
+.fa-hands-helping
+
+{
+  font-size: 10px;
+}
+
+.footer_link
+
+{
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 25px;
+}
+
+.restaurant-offering, .footer_link
+{
+  line-height: 25px;
+}
+
+
+}
+
+/*Test Desktop page accueil*/ 
+
+/*Fonctionnement*/ 
+
+
+@media only screen and (min-width: 1024px)
+
+{
+
+.functioning
+{
+  display: flex;
+
+}
+
+
 }
