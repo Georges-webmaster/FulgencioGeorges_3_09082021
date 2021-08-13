@@ -24,11 +24,12 @@ h2 {
 
 /****Faire l'ajustement pour un mobile small 320 px****/
 
+/****Résolution pour un mobile M 375px ****/
 @media only screen and (min-width: 375px) {
   /*Header*/
 
   header {
-    box-shadow: 10px 10px 0px 0px;
+    box-shadow: 0px 10px 0px 0px;
     /*Ombre à revoir*/
   }
 
@@ -47,7 +48,7 @@ h2 {
   .localization-town {
     display: flex;
     background-color: #eaeaea;
-    width: 100%; /*Voir pour un 375px*/
+    /*Voir pour un 375px Problématique widht 100% J'ai retiré*/
     margin-bottom: 0px;
   }
 
@@ -75,6 +76,10 @@ h2 {
     margin-top: 0px;
     padding-top: 40px;
     margin-left: 65px;
+  }
+  /*Pour ne pas afficher le titre Réservez...*/
+  .desktop-display {
+    display: none;
   }
 
   .baseline .line-title {
@@ -252,11 +257,18 @@ h2 {
     height: 195px;
   }
 
-  .img_footer img {
+  .logo_footer h2 {
     width: 110px;
     padding-bottom: 10px;
     margin-left: 25px;
     padding-top: 25px;
+  }
+
+  .logo_footer a {
+    /* A revoir pour la mise en forme du logo voir en image*/
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
   }
 
   .restaurant-offering {
@@ -285,54 +297,163 @@ h2 {
   }
 }
 
-
 /****Test responsive pour Tablet valeur comprise entre 768px -991px****/
-
-
 
 /****Test Responsive Grands écrans d'ordinateurs valeur entre 992px - 1199px page accueil****/
 
 @media only screen and (min-width: 1200px) {
   .bloc_page {
     margin: 0 auto;
-    width: 100%;
+    width: 100%; /* A vérifier pour la mise en forme sur la dimension du widht*/
   }
 
-  /* header */
+  /*header*/
+
+  header {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+  }
+
+  /*localisation géographique */
+
+  .localization-town {
+    justify-content: center;
+    margin-left: -118px; /*A vérifier mise en page*/
+    margin: auto; /*A vérifier plus tard*/
+    height: 50px;
+  }
+
+  .fa-map-marker-alt {
+    line-height: 46px;
+  }
+
+  .localization-town span {
+    margin-left: 0px;
+  }
+
+  /*Baseline*/
+  /*Titre en baseline*/
+
+  .baseline {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title-baseline,
+  .line-title {
+    display: none;
+  }
+
+  .baseline p {
+    margin-bottom: 30px;
+  }
+
+  .desktop-display {
+    display: flex;
+    font-weight: 900;
+    height: 90px;
+    margin-top: 10px;
+    padding-top: 40px;
+    margin-bottom: 0px;
+  }
+
+  .desktop-baseline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .baseline {
+    height: 237px;
+  }
 
   /*Fonctionnement*/
 
   .functioning {
     display: flex;
-    height: 205px;
-  
+    justify-content: center;
+    height: 90px;
+  }
+  .functioning button {
+    width: 308px;
   }
 
-  /*Baseline*/
+  .functioning h1 {
+    margin-left: -8px;
+  }
 
   /*Restaurant*/
 
   .restaurant {
-    height: 740px;
+    height: 940px;
+  }
+
+  .restaurant h1 {
+    margin-bottom: 40px;
+  }
+
+  .desktop_title {
+    margin-left: 347px;
+    margin-top: -8px;
   }
 
   .desktop_restaurant {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .restaurant-content {
-    width: 47%;
-    margin-left: 25px;
+    height: 335px;
+    width: 30%;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 80px;
   }
 
   .restaurant-content img {
     width: 100%;
-    height: 180px;
+    height: 250px;
   }
 
+  .restaurant-new {
+    /*Affichage à reprendre en 1200px ok en 1900px*/
+    left: 470px;
+    top: -260px;
+  }
+
+  .fa-heart {
+    left: 500px;
+  }
 
   /*Footer*/
-  
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  .desktop-footer {
+    display: flex;
+    flex-direction: column;
+    margin-right: 170px;
+  }
+
+  .logo_footer {
+    margin-left: 200px;
+  }
+
+  .logo_footer h2 {
+    padding-bottom: 0px;
+    margin-left: -16px;
+  }
+
+  .footer_link {
+    margin-left: 24px;
+  }
 }

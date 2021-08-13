@@ -31,8 +31,7 @@
   <body>
     <div class="bloc_page">
       <header>
-        <!--Emplacement de la balise Header-->
-
+        <!--Emplacement de la balise Header et Bloc en-tête-->
         <h1 class="title_website">ohmyfood</h1>
 
         <img
@@ -46,27 +45,29 @@
       </header>
 
       <div class="localization-town">
-        <!-- Préparation balise localisation Paris -->
+        <!-- Préparation balise localisation Géographique Paris -->
 
         <span> <i class="fas fa-map-marker-alt"></i> </span>
         <p>Paris, Belleville</p>
       </div>
 
       <aside class="baseline">
-        <!-- Balise pour basline et info -->
-
+        <!-- Balise pour basline et Texte informatif -->
         <h1 class="title-baseline">Réservez le menu qui</h1>
         <h1 class="line-title">vous convient</h1>
+        <h2 class="desktop-display">Réservez le menu qui vous convient</h2>
 
-        <p>
-          Découvrez des restaurants d'exception, sélectionnés par nos soins.
-        </p>
-
-        <button>Explorer nos restaurants</button>
+        <div class="desktop-baseline">
+          <!--Affichage desktop pour mise en forme-->
+          <p>
+            Découvrez des restaurants d'exception, sélectionnés par nos soins.
+          </p>
+          <button>Explorer nos restaurants</button>
+        </div>
       </aside>
 
       <section class="functioning">
-        <!-- Balise pour fonctionnement pour utilisateur -->
+        <!-- Balise pour fonctionnement pour l'utilisateur -->
         <h1>Fonctionnement</h1>
         <div>
           <button class="button-grey">
@@ -95,14 +96,14 @@
       </section>
 
       <section class="restaurant">
-        <!-- Selection des restaurants -->
+        <!-- Balise pour la sélection des restaurants -->
 
-        <!-- Section englobante pour restaurants -->
         <div class="desktop_title">
           <h1>Restaurants</h1>
         </div>
 
         <div class="desktop_restaurant">
+          <!-- Balise pour affichage desktop -->
           <div class="restaurant-content">
             <!--Contenu la palette du goût-->
 
@@ -167,20 +168,19 @@
             </div>
           </div>
         </div>
-        <!-- Section englobante pour restaurants -->
       </section>
 
       <footer>
         <!-- Bloc Pied de page -->
 
-        <div class="img_footer">
+        <div class="logo_footer">
           <a href="#">
-            <img src="images/ohmyfood.png" alt="Logo entreprise Ohmyfood" />
+            <h2>ohmyfood</h2>
           </a>
         </div>
 
-        <div>
-          <!-- Englobe dans pied de page  -->
+        <div class="desktop-footer">
+          <!-- Affichage en colonne footer  -->
 
           <div class="restaurant-offering">
             <a class="footer_link" href="#">
@@ -199,6 +199,10 @@
               Devenir un partenaire
             </a>
           </div>
+        </div>
+
+        <div class="desktop-footer">
+          <!-- Affichage en colonne footer  -->
 
           <div><a class="footer_link" href="#">Mentions légales</a></div>
 
@@ -206,6 +210,7 @@
             <a class="footer_link" href="mailto:contact@ohmyfood.com"
               >Contact</a
             >
+            <!--e-mail contact-->
           </div>
         </div>
       </footer>
