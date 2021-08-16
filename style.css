@@ -2,7 +2,7 @@
 
 .bloc_page {
   margin: 0 auto;
-  width: 100%;
+  /*Retirer le widht 100%*/
 }
 
 * {
@@ -10,37 +10,32 @@
 }
 
 p,
-h1,
 h2 {
   font-family: "Roboto", sans-serif; /*Police Texte utilisé Roboto Regular 400*/
 }
 
-/*SEO*/
-
-.title_website {
-  display: none;
+h1 {
   font-family: "Shrikhand", cursive; /*Police Logo et titres utilisés Shrikhand Regular 400*/
 }
 
 /****Faire l'ajustement pour un mobile small 320 px****/
 
-/****Résolution pour un mobile M 375px ****/
-@media only screen and (min-width: 375px) {
+/****Résolution pour un mobile taille S ****/
+@media only screen and (min-width: 100px) {
   /*Header*/
 
-  header {
-    box-shadow: 0px 10px 0px 0px;
-    /*Ombre à revoir*/
+  h1.title_website {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
-  .logo-website {
-    margin-top: 20px;
-    width: 170px;
-    height: 30px;
-    margin-left: 106px;
-    margin-right: 106px;
-    background-color: #ffffff;
-    margin-bottom: 10px;
+  header {
+    box-shadow: 0px 0px 0px 0px;
+    /*Ombre à revoir*/
   }
 
   /*Localisation géographique*/
@@ -50,10 +45,7 @@ h2 {
     background-color: #eaeaea;
     /*Voir pour un 375px Problématique widht 100% J'ai retiré*/
     margin-bottom: 0px;
-  }
-
-  .localization-town span {
-    margin-left: 104px;
+    justify-content: center;
   }
 
   .localization-town p {
@@ -61,41 +53,51 @@ h2 {
   }
 
   .fa-map-marker-alt {
-    line-height: 40px;
+    line-height: 49px;
   }
 
   /*Baseline*/
 
   .baseline {
-    height: 305px;
-    margin-bottom: 40px;
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
     background-color: #f6f6f6;
   }
 
-  .baseline h1 {
+  .baseline h2 {
     margin-top: 0px;
     padding-top: 40px;
-    margin-left: 65px;
+    font-weight: bold;
   }
-  /*Pour ne pas afficher le titre Réservez...*/
+  /*Pour ne pas afficher le titre Réservez en mobile et Tablet...*/
   .desktop-display {
     display: none;
   }
 
   .baseline .line-title {
     padding-top: 0px;
-    line-height: 10px;
-    margin-left: 100px;
+    line-height: 0px;
   }
 
-  .baseline p {
-    margin-left: 40px;
+  .baseline-txt {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
     font-weight: lighter;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
+    line-height: 5px;
+  }
+
+  .baseline-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
   }
 
   .baseline button {
-    margin-left: 80px;
     border-radius: 20px;
     width: 215px;
     height: 50px;
@@ -103,16 +105,15 @@ h2 {
     border: 20px;
     color: #ffffff;
     font-weight: bolder;
-    margin-bottom: 60px;
   }
 
   /*Fonctionnement*/
 
   .functioning {
-    height: 400px;
+    height: 375px;
   }
 
-  .functioning h1 {
+  .functioning h2 {
     /*voir widht*/
     margin-left: 20px;
     margin-bottom: 35px;
@@ -120,15 +121,15 @@ h2 {
 
   .functioning button {
     display: flex;
-    margin-left: 30px;
     margin-bottom: 25px;
+    margin-left: 15px;
   }
 
   .button-grey {
     border: 20px;
     border-radius: 20px;
     background-color: #f6f6f6;
-    width: 320px;
+    width: 280px;
     height: 70px;
   }
 
@@ -137,9 +138,10 @@ h2 {
     height: 25px;
     border-radius: 30px;
     background-color: #9356dc;
-    margin-left: -14px;
+    margin-left: 0px;
     line-height: 25px;
     margin-top: 23px;
+    margin-left: -11px;
   }
 
   .functioning .button-number {
@@ -164,14 +166,14 @@ h2 {
 
   .button-txt {
     text-align: center;
-    line-height: 45px;
+    line-height: 78px;
     font-weight: bolder;
   }
 
   .button-purple {
     border: 20px;
     border-radius: 20px;
-    width: 320px;
+    width: 280px;
     height: 70px;
     background-color: #f5edff;
   }
@@ -188,13 +190,18 @@ h2 {
 
   .restaurant {
     height: 1300px;
-    width: 100%;
     background-color: #f6f6f6;
   }
 
-  .restaurant h1 {
-    padding-top: 60px;
+  .desktop_restaurant {
+    padding: 20px;
+  }
+
+  .restaurant h2 {
+    padding-top: 55px;
+    margin-left: 20px;
     margin-bottom: 20px;
+    font-weight: bold;
   }
 
   .restaurant-content {
@@ -214,7 +221,7 @@ h2 {
 
   .restaurant-new {
     position: relative;
-    left: 260px;
+    left: 165px;
     top: -190px;
     width: 90px;
     height: 30px;
@@ -239,7 +246,7 @@ h2 {
 
   .fa-heart {
     position: relative;
-    left: 290px;
+    left: 200px;
     top: -49px;
     font-size: 25px;
   }
@@ -253,27 +260,19 @@ h2 {
 
   footer {
     background-color: #353535;
-    width: 100%;
     height: 195px;
+    padding-top: 20px;
   }
 
-  .logo_footer h2 {
-    width: 110px;
-    padding-bottom: 10px;
+  .logo-footer {
     margin-left: 25px;
-    padding-top: 25px;
+    margin-bottom: 20px;
   }
 
-  .logo_footer a {
-    /* A revoir pour la mise en forme du logo voir en image*/
+  .logo-footer a {
     text-decoration: none;
     color: #ffffff;
-    font-family: "Roboto", sans-serif;
-  }
-
-  .restaurant-offering {
-    display: flex;
-    margin-left: -1px;
+    font-family: "Shrikhand", cursive;
   }
 
   .fa-utensils,
@@ -291,13 +290,118 @@ h2 {
     margin-left: 25px;
   }
 
-  .restaurant-offering,
   .footer_link {
     line-height: 25px;
   }
 }
 
-/****Test responsive pour Tablet valeur comprise entre 768px -991px****/
+/****Responsive Mobile 375px Taille M ****/
+
+@media only screen and (min-width: 375px) {
+  /*Localisation géographique à voir en fin de résultat affichage*/
+
+  /*Fonctionnement*/
+
+  .button-grey {
+    width: 335px;
+  }
+  .button-purple {
+    width: 335px;
+  }
+
+  /*Restaurant*/
+
+  .restaurant-new {
+    left: 218px;
+  }
+
+  .fa-heart {
+    left: 255px;
+  }
+
+  /****Responsive Mobile 425px Taille L ****/
+}
+
+@media only screen and (min-width: 425px) {
+  /*Localisation géographique*/
+
+  /*Fonctionnement*/
+
+  .button-grey {
+    width: 380px;
+  }
+  .button-purple {
+    width: 380px;
+  }
+
+  /*Restaurant*/
+
+  .restaurant-new {
+    left: 265px;
+  }
+
+  .fa-heart {
+    left: 310px;
+  }
+}
+
+@media only screen and (min-width: 440px) {
+  /*Localisation géographique*/
+
+  /*Fonctionnement*/
+
+  .button-grey {
+    width: 405px;
+  }
+  .button-purple {
+    width: 405px;
+  }
+  /*Restaurant*/
+
+  .restaurant-new {
+    left: 405px;
+  }
+  .restaurant-new {
+    left: 280px;
+  }
+  .fa-heart {
+    left: 320px;
+  }
+}
+
+@media only screen and (min-width: 460px) {
+  /*Localisation géographique*/
+
+  /*Fonctionnement*/
+
+  .button-grey {
+    width: 405px;
+  }
+  .button-purple {
+    width: 405px;
+  }
+  /*Restaurant*/
+
+  .restaurant-new {
+    left: 405px;
+  }
+  .restaurant-new {
+    left: 280px;
+  }
+  .fa-heart {
+    left: 320px;
+  }
+}
+
+
+
+/****Responsive pour Tablet 768px****/
+
+@media only screen and (min-width: 768px) {
+  .localization-town span {
+    margin-left: 114px;
+  }
+}
 
 /****Test Responsive Grands écrans d'ordinateurs valeur entre 992px - 1199px page accueil****/
 
@@ -366,10 +470,6 @@ h2 {
     align-items: center;
   }
 
-  .baseline {
-    height: 237px;
-  }
-
   /*Fonctionnement*/
 
   .functioning {
@@ -381,7 +481,7 @@ h2 {
     width: 308px;
   }
 
-  .functioning h1 {
+  .functioning h2 {
     margin-left: -8px;
   }
 
@@ -391,7 +491,7 @@ h2 {
     height: 940px;
   }
 
-  .restaurant h1 {
+  .restaurant h2 {
     margin-bottom: 40px;
   }
 

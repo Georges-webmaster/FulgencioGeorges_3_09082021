@@ -20,10 +20,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https : //fonts.googleapis.com/css2? family= Roboto & display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Accueil Ohmyfood</title>
@@ -34,63 +33,61 @@
         <!--Emplacement de la balise Header et Bloc en-tête-->
         <h1 class="title_website">ohmyfood</h1>
 
-        <img
-          class="logo-website"
-          src="images/ohmyfood.png"
-          alt="Logo entreprise ohmyfood"
-        />
-
         <nav></nav>
-        <!--Menu navigation desktop-->
+        <!--Menu navigation desktop attention au W3C-->
       </header>
 
       <div class="localization-town">
         <!-- Préparation balise localisation Géographique Paris -->
 
-        <span> <i class="fas fa-map-marker-alt"></i> </span>
+        <span><i class="fas fa-map-marker-alt"></i></span>
         <p>Paris, Belleville</p>
       </div>
 
       <aside class="baseline">
         <!-- Balise pour basline et Texte informatif -->
-        <h1 class="title-baseline">Réservez le menu qui</h1>
-        <h1 class="line-title">vous convient</h1>
-        <h2 class="desktop-display">Réservez le menu qui vous convient</h2>
-
+        <h2 class="title-baseline">Réservez le menu qui</h2>
+        <h2 class="line-title">vous convient</h2>
+        <span class="desktop-display">Réservez le menu qui vous convient</span>
+<!--Vérification de la balise pour affiche desktop-->
         <div class="desktop-baseline">
           <!--Affichage desktop pour mise en forme-->
-          <p>
-            Découvrez des restaurants d'exception, sélectionnés par nos soins.
+          <p class="baseline-txt">
+            Découvrez des restaurants d'exception, 
           </p>
-          <button>Explorer nos restaurants</button>
+          <p class="baseline-txt">sélectionnés par nos soins.
+          </p>
+          <div class="baseline-button">
+          <button type="submit">Explorer nos restaurants</button>
+          </div>
         </div>
       </aside>
 
       <section class="functioning">
         <!-- Balise pour fonctionnement pour l'utilisateur -->
-        <h1>Fonctionnement</h1>
+        <h2>Fonctionnement</h2>
         <div>
           <button class="button-grey">
-            <p class="button-number">1</p>
+            <span class="button-number">1</span>
             <i class="fas fa-mobile-alt"></i>
-            <p class="button-txt">Choisissez un restaurant</p>
+            <span class="button-txt">Choisissez un restaurant</span>
           </button>
         </div>
 
         <div>
           <button class="button-grey">
-            <p class="button-number">2</p>
+            <span class="button-number">2</span>
             <i class="fas fa-list"></i>
-            <p class="button-txt">Composez votre menu</p>
+            <span class="button-txt">Composez votre menu</span>
           </button>
         </div>
 
         <div>
           <button class="button-purple">
-            <p class="button-number">3</p>
+            <span class="button-number">3</span>
 
             <i class="fas fa-store"></i>
-            <p class="button-txt">Dégustez au restaurant</p>
+            <span class="button-txt">Dégustez au restaurant</span>
           </button>
         </div>
       </section>
@@ -99,9 +96,8 @@
         <!-- Balise pour la sélection des restaurants -->
 
         <div class="desktop_title">
-          <h1>Restaurants</h1>
+          <h2>Restaurants</h2>
         </div>
-
         <div class="desktop_restaurant">
           <!-- Balise pour affichage desktop -->
           <div class="restaurant-content">
@@ -173,16 +169,14 @@
       <footer>
         <!-- Bloc Pied de page -->
 
-        <div class="logo_footer">
-          <a href="#">
-            <h2>ohmyfood</h2>
-          </a>
+        <div class="logo-footer">
+          <a href="#">ohmyfood</a>
         </div>
 
         <div class="desktop-footer">
           <!-- Affichage en colonne footer  -->
 
-          <div class="restaurant-offering">
+          <div>
             <a class="footer_link" href="#">
               <span>
                 <i class="fas fa-utensils"></i>
@@ -191,7 +185,7 @@
             </a>
           </div>
 
-          <div class="restaurant-offering">
+          <div>
             <a class="footer_link" href="#">
               <span>
                 <i class="fas fa-hands-helping"></i>
@@ -204,7 +198,8 @@
         <div class="desktop-footer">
           <!-- Affichage en colonne footer  -->
 
-          <div><a class="footer_link" href="#">Mentions légales</a></div>
+          <div><a class="footer_link" href="#">Mentions légales</a>
+          </div>
 
           <div>
             <a class="footer_link" href="mailto:contact@ohmyfood.com"
