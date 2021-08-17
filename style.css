@@ -99,7 +99,7 @@ h1 {
 
   .baseline button {
     border-radius: 20px;
-    width: 215px;
+    width: 74%;
     height: 50px;
     background-color: #9356dc;
     border: 20px;
@@ -126,16 +126,14 @@ h1 {
 
   .functioning button {
     display: flex;
+    width: 92%;
     margin-bottom: 25px;
     margin-left: 15px; /*Marge à gauche à vérifier*/
-  }
-
-  .button-grey {
     border: 20px;
     border-radius: 20px;
     background-color: #f6f6f6;
-    width: 92%;
     height: 70px;
+    justify-content: flex-start;
   }
 
   .button-number {
@@ -143,10 +141,9 @@ h1 {
     height: 25px;
     border-radius: 30px;
     background-color: #9356dc;
-    margin-left: 0px; /*Deux marges à gauche*/
     line-height: 25px;
     margin-top: 23px;
-    margin-left: -11px; /*Deux marges à gauche*/
+    margin-left: -12px;
   }
 
   .functioning .button-number {
@@ -154,41 +151,45 @@ h1 {
   }
 
   .fa-mobile-alt {
-    padding-left: 35px;
     line-height: 70px;
     padding-right: 30px;
+    padding-left: 35px;
     font-size: 20px;
     color: #7e7e7e;
   }
 
   .fa-list {
-    padding-left: 35px;
     line-height: 70px;
     padding-right: 30px;
+    padding-left: 29px;
     font-size: 20px;
     color: #7e7e7e;
   }
 
+  .fa-store {
+    line-height: 70px;
+    padding-right: 35px;
+    padding-left: 26px;
+    font-size: 20px;
+    color: #9356dc;
+  }
+
   .button-txt {
-    text-align: center;
     line-height: 78px;
     font-weight: bolder;
   }
 
-  .button-purple {
+  .functioning .button-purple {
     border: 20px;
     border-radius: 20px;
-    width: 92%;
     height: 70px;
     background-color: #f5edff;
   }
 
-  .fa-store {
-    padding-left: 35px;
-    line-height: 70px;
-    padding-right: 30px;
-    font-size: 20px;
-    color: #9356dc;
+  .button-txt-align {
+    line-height: 78px;
+    font-weight: bolder;
+    margin-left: -12px;
   }
 
   /*Restaurant*/
@@ -306,7 +307,11 @@ h1 {
   /*Localisation géographique à voir en fin de résultat affichage*/
 
   /*Fonctionnement test sinon (button-grey et button-purple*/
-
+  .button-txt-align {
+    line-height: 78px;
+    font-weight: bolder;
+    margin-left: -8px;
+  }
   /*Restaurant*/
 
   .restaurant-new {
@@ -324,12 +329,6 @@ h1 {
   /*Localisation géographique*/
 
   /*Fonctionnement*/
-
-  .functioning-display .button-grey,
-  .button-purple {
-    display: flex;
-    justify-content: center;
-  }
 
   /*Restaurant*/
 
@@ -475,6 +474,7 @@ h1 {
     display: block;
     font-size: 25px;
     font-weight: bolder;
+    font-family: "Roboto", sans-serif; /*Police Texte utilisé Roboto Regular 400*/
   }
 
   .baseline h2 {
@@ -489,26 +489,30 @@ h1 {
   }
 
   .baseline button {
-    width: 80%;
+    width: 100%;
   }
 
-  .button-txt {
+  /*Functionning*/
+
+  .functioning button {
+    width: 98%;
+  }
+
+  .button-txt,
+  .button-txt-align {
     font-size: 16px;
   }
 
-  .button-grey,
-  .button-purple {
-    width: 96%;
-  }
-
-  .fa-list {
+  .fa-mobile-alt,
+  .fa-list,
+  .fa-store {
     font-size: 25px;
-    margin-left: 60px; /*Marge à vérifier*/
   }
 
-  .fa-mobile-alt {
-    font-size: 21px;
-    margin-left: 43px; /*Marge à vérifier avec la version mobile*/
+  .button-number {
+    width: 35px;
+    height: 35px;
+    line-height: 32px;
   }
 
   /*Restaurant*/
@@ -546,85 +550,28 @@ h1 {
 }
 
 /****Test Responsive Grands écrans d'ordinateurs valeur entre 992px - 1199px page accueil****/
+/*Base de travail pour une version Laptop 1024px*/
 
-@media only screen and (min-width: 1200px) {
-  .bloc_page {
-    margin: 0 auto;
-    width: 100%; /* A vérifier pour la mise en forme sur la dimension du widht*/
-  }
-
-  /*header*/
-
-  header {
-    display: flex;
-    justify-content: center;
-    height: 70px;
-  }
-
+@media only screen and (min-width: 1440px) {
   /*localisation géographique */
 
-  .localization-town {
-    justify-content: center;
-    margin-left: -118px; /*A vérifier mise en page*/
-    margin: auto; /*A vérifier plus tard*/
-    height: 50px;
-  }
-
-  .fa-map-marker-alt {
-    line-height: 46px;
-  }
-
-  .localization-town span {
-    margin-left: 0px;
-  }
-
   /*Baseline*/
-  /*Titre en baseline*/
-
-  .baseline {
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .title-baseline,
-  .line-title {
-    display: none;
-  }
-
-  .baseline p {
-    margin-bottom: 30px;
-  }
-
-  .desktop-display {
-    display: flex;
-    font-weight: 900;
-    height: 90px;
-    margin-top: 10px;
-    padding-top: 40px;
-    margin-bottom: 0px;
-  }
-
-  .desktop-baseline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 
   /*Fonctionnement*/
-
   .functioning {
-    display: flex;
-    justify-content: center;
-    height: 90px;
-  }
-  .functioning button {
-    width: 308px;
+    height: 200px;
   }
 
+  .functioning-display {
+    flex-direction: row;
+    margin-left: 259px;
+  }
   .functioning h2 {
-    margin-left: -8px;
+    margin-left: 259px;
+  }
+
+  .button-desktop {
+    margin-right: 20px;
   }
 
   /*Restaurant*/
@@ -635,6 +582,7 @@ h1 {
 
   .restaurant h2 {
     margin-bottom: 40px;
+    margin-left: -89px;
   }
 
   .desktop_title {
@@ -664,12 +612,12 @@ h1 {
 
   .restaurant-new {
     /*Affichage à reprendre en 1200px ok en 1900px*/
-    left: 470px;
+    left: 310px;
     top: -260px;
   }
 
   .fa-heart {
-    left: 500px;
+    left: 360px;
   }
 
   /*Footer*/
