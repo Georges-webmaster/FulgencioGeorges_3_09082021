@@ -120,14 +120,14 @@ h1 {
   }
 
   .functioning-display {
-display: flex;
-flex-direction: column;
-}
+    display: flex;
+    flex-direction: column;
+  }
 
   .functioning button {
     display: flex;
     margin-bottom: 25px;
-    margin-left: 15px;
+    margin-left: 15px; /*Marge à gauche à vérifier*/
   }
 
   .button-grey {
@@ -143,10 +143,10 @@ flex-direction: column;
     height: 25px;
     border-radius: 30px;
     background-color: #9356dc;
-    margin-left: 0px;
+    margin-left: 0px; /*Deux marges à gauche*/
     line-height: 25px;
     margin-top: 23px;
-    margin-left: -11px;
+    margin-left: -11px; /*Deux marges à gauche*/
   }
 
   .functioning .button-number {
@@ -305,16 +305,7 @@ flex-direction: column;
 @media only screen and (min-width: 375px) {
   /*Localisation géographique à voir en fin de résultat affichage*/
 
-  /*Fonctionnement test sinon (button-grey et button-purple*/ 
-
-  .button-grey {
-    width: 335px;
-  }
-  .button-purple {
-    width: 335px;
-  }
-
-  
+  /*Fonctionnement test sinon (button-grey et button-purple*/
 
   /*Restaurant*/
 
@@ -334,11 +325,10 @@ flex-direction: column;
 
   /*Fonctionnement*/
 
-  .button-grey {
-    width: 380px;
-  }
+  .functioning-display .button-grey,
   .button-purple {
-    width: 380px;
+    display: flex;
+    justify-content: center;
   }
 
   /*Restaurant*/
@@ -357,12 +347,6 @@ flex-direction: column;
 
   /*Fonctionnement*/
 
-  .button-grey {
-    width: 405px;
-  }
-  .button-purple {
-    width: 405px;
-  }
   /*Restaurant*/
 
   .restaurant-new {
@@ -381,12 +365,6 @@ flex-direction: column;
 
   /*Fonctionnement*/
 
-  .button-grey {
-    width: 405px;
-  }
-  .button-purple {
-    width: 405px;
-  }
   /*Restaurant*/
 
   .restaurant-new {
@@ -405,12 +383,6 @@ flex-direction: column;
 
   /*Fonctionnement*/
 
-  .button-grey {
-    width: 430px;
-  }
-  .button-purple {
-    width: 430px;
-  }
   /*Restaurant*/
 
   .restaurant-new {
@@ -429,12 +401,6 @@ flex-direction: column;
 
   /*Fonctionnement*/
 
-  .button-grey {
-    width: 430px;
-  }
-  .button-purple {
-    width: 430px;
-  }
   /*Restaurant*/
 
   .restaurant-new {
@@ -446,18 +412,11 @@ flex-direction: column;
   .fa-heart {
     left: 372px;
   }
-  }
+}
 
 @media only screen and (min-width: 530px) {
+  /*Fonctionnement*/
 
-/*Fonctionnement*/
-
-  .button-grey {
-    width: 490px;
-  }
-  .button-purple {
-    width: 490px;
-  }
   /*Restaurant*/
 
   .restaurant-new {
@@ -469,19 +428,11 @@ flex-direction: column;
   .fa-heart {
     left: 410px;
   }
-
 }
-  
+
 @media only screen and (min-width: 550px) {
+  /*Fonctionnement*/
 
-/*Fonctionnement*/
-
-  .button-grey {
-    width: 506px;
-  }
-  .button-purple {
-    width: 506px;
-  }
   /*Restaurant*/
 
   .restaurant-new {
@@ -493,20 +444,11 @@ flex-direction: column;
   .fa-heart {
     left: 432px;
   }
-
 }
-  
 
 @media only screen and (min-width: 550px) {
+  /*Fonctionnement*/
 
-/*Fonctionnement*/
-
-  .button-grey {
-    width: 506px;
-  }
-  .button-purple {
-    width: 506px;
-  }
   /*Restaurant*/
 
   .restaurant-new {
@@ -518,50 +460,89 @@ flex-direction: column;
   .fa-heart {
     left: 432px;
   }
-
 }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /****Responsive pour Tablet 768px****/
 
 @media only screen and (min-width: 768px) {
-  
+  /*baseline */
 
- /*Fonctionnement*/
-
-  .button-grey {
-    width: 280px;
+  .baseline {
+    height: 239px;
   }
+
+  .baseline span {
+    display: block;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+
+  .baseline h2 {
+    display: none;
+  }
+
+  .desktop-display {
+    padding-top: 40px;
+  }
+  .baseline-txt {
+    font-size: 18px;
+  }
+
+  .baseline button {
+    width: 80%;
+  }
+
+  .button-txt {
+    font-size: 16px;
+  }
+
+  .button-grey,
   .button-purple {
-    width: 280px;
+    width: 96%;
   }
 
+  .fa-list {
+    font-size: 25px;
+    margin-left: 60px; /*Marge à vérifier*/
+  }
 
+  .fa-mobile-alt {
+    font-size: 21px;
+    margin-left: 43px; /*Marge à vérifier avec la version mobile*/
+  }
 
+  /*Restaurant*/
+
+  .restaurant {
+    height: 1750px;
+  }
+
+  .restaurant-content {
+    height: 370px;
+  }
+
+  .restaurant-content img {
+    height: 290px;
+  }
+
+  .restaurant-new {
+    left: 605px;
+    top: -300px;
+  }
+
+  .fa-heart {
+    left: 650px;
+  }
+
+  /*Footer*/
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  /*Fonctionnement*/
 }
 
 /****Test Responsive Grands écrans d'ordinateurs valeur entre 992px - 1199px page accueil****/
