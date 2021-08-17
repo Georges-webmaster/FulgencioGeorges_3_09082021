@@ -119,6 +119,11 @@ h1 {
     margin-bottom: 35px;
   }
 
+  .functioning-display {
+display: flex;
+flex-direction: column;
+}
+
   .functioning button {
     display: flex;
     margin-bottom: 25px;
@@ -129,7 +134,7 @@ h1 {
     border: 20px;
     border-radius: 20px;
     background-color: #f6f6f6;
-    width: 280px;
+    width: 92%;
     height: 70px;
   }
 
@@ -173,7 +178,7 @@ h1 {
   .button-purple {
     border: 20px;
     border-radius: 20px;
-    width: 280px;
+    width: 92%;
     height: 70px;
     background-color: #f5edff;
   }
@@ -300,7 +305,7 @@ h1 {
 @media only screen and (min-width: 375px) {
   /*Localisation géographique à voir en fin de résultat affichage*/
 
-  /*Fonctionnement*/
+  /*Fonctionnement test sinon (button-grey et button-purple*/ 
 
   .button-grey {
     width: 335px;
@@ -308,6 +313,8 @@ h1 {
   .button-purple {
     width: 335px;
   }
+
+  
 
   /*Restaurant*/
 
@@ -393,14 +400,168 @@ h1 {
   }
 }
 
+@media only screen and (min-width: 475px) {
+  /*Localisation géographique*/
+
+  /*Fonctionnement*/
+
+  .button-grey {
+    width: 430px;
+  }
+  .button-purple {
+    width: 430px;
+  }
+  /*Restaurant*/
+
+  .restaurant-new {
+    left: 430px;
+  }
+  .restaurant-new {
+    left: 310px;
+  }
+  .fa-heart {
+    left: 353px;
+  }
+}
+
+@media only screen and (min-width: 490px) {
+  /*Localisation géographique* A retier plus pour version finale/
+
+  /*Fonctionnement*/
+
+  .button-grey {
+    width: 430px;
+  }
+  .button-purple {
+    width: 430px;
+  }
+  /*Restaurant*/
+
+  .restaurant-new {
+    left: 430px;
+  }
+  .restaurant-new {
+    left: 330px;
+  }
+  .fa-heart {
+    left: 372px;
+  }
+  }
+
+@media only screen and (min-width: 530px) {
+
+/*Fonctionnement*/
+
+  .button-grey {
+    width: 490px;
+  }
+  .button-purple {
+    width: 490px;
+  }
+  /*Restaurant*/
+
+  .restaurant-new {
+    left: 430px;
+  }
+  .restaurant-new {
+    left: 370px;
+  }
+  .fa-heart {
+    left: 410px;
+  }
+
+}
+  
+@media only screen and (min-width: 550px) {
+
+/*Fonctionnement*/
+
+  .button-grey {
+    width: 506px;
+  }
+  .button-purple {
+    width: 506px;
+  }
+  /*Restaurant*/
+
+  .restaurant-new {
+    left: 430px;
+  }
+  .restaurant-new {
+    left: 390px;
+  }
+  .fa-heart {
+    left: 432px;
+  }
+
+}
+  
+
+@media only screen and (min-width: 550px) {
+
+/*Fonctionnement*/
+
+  .button-grey {
+    width: 506px;
+  }
+  .button-purple {
+    width: 506px;
+  }
+  /*Restaurant*/
+
+  .restaurant-new {
+    left: 430px;
+  }
+  .restaurant-new {
+    left: 390px;
+  }
+  .fa-heart {
+    left: 432px;
+  }
+
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /****Responsive pour Tablet 768px****/
 
 @media only screen and (min-width: 768px) {
-  .localization-town span {
-    margin-left: 114px;
+  
+
+ /*Fonctionnement*/
+
+  .button-grey {
+    width: 280px;
   }
+  .button-purple {
+    width: 280px;
+  }
+
+
+
 }
 
 /****Test Responsive Grands écrans d'ordinateurs valeur entre 992px - 1199px page accueil****/
