@@ -461,7 +461,7 @@ h1 {
   }
 }
 
-/****Responsive pour Tablet 768px****/
+/****Responsive Tablet 768px****/
 
 @media only screen and (min-width: 768px) {
   /*baseline */
@@ -545,8 +545,6 @@ h1 {
     justify-content: space-around;
     align-items: baseline;
   }
-
-  /*Fonctionnement*/
 }
 
 /****Responsive pour Laptop 1024px****/
@@ -560,6 +558,7 @@ h1 {
 
   .functioning-display {
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .button-desktop {
@@ -604,10 +603,9 @@ h1 {
   }
 
   .restaurant h2 {
-    margin-bottom: 0px;
-    margin-left: 40px;
-    margin-top: 0px;
-    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    width: 18%;
   }
 
   .desktop_title {
@@ -619,15 +617,16 @@ h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-around;
+    padding: 0px;
   }
 
   .restaurant-content {
     height: 400px;
     width: 41%;
     margin-left: 0px;
-    margin-right: 49px;
-    margin-bottom: 80px;
+    margin-right: 0px;
+    margin-bottom: 71px;
   }
 
   .restaurant-content img {
@@ -680,15 +679,6 @@ h1 {
 @media only screen and (min-width: 1200px) {
   /*Fonctionnement*/
 
-  .functioning {
-    display: flex;
-    flex-direction: row;
-    height: 115px;
-  }
-
-  .functioning-display {
-    flex-direction: row;
-  }
   .functioning button {
     width: 104%;
   }
@@ -708,12 +698,11 @@ h1 {
   }
 
   .functioning h2 {
-    margin-left: 40px;
-    margin-right: 15px;
-    margin-bottom: 0px;
-    margin-top: 30px;
+    margin-top: 22px;
     font-size: 18px;
+    margin-left: 40px;
   }
+
   .fa-mobile-alt,
   .fa-list,
   .fa-store {
@@ -731,35 +720,14 @@ h1 {
   }
 
   .restaurant h2 {
-    margin-bottom: 0px;
-    margin-left: 40px;
-    margin-top: 0px;
-    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    width: 11%;
   }
 
   .desktop_title {
     margin-left: 0px;
     margin-top: 0px;
-  }
-
-  .desktop_restaurant {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-
-  .restaurant-content {
-    height: 400px;
-    width: 43%;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 80px;
-  }
-
-  .restaurant-content img {
-    width: 100%;
-    height: 295px;
   }
 
   .restaurant-new {
@@ -804,60 +772,48 @@ h1 {
 /*Base de travail pour une version Laptop 1024px*/
 
 @media only screen and (min-width: 1440px) {
-  /*localisation géographique */
-
-  /*Baseline*/
   /*Fonctionnement*/
-  .functioning {
-    height: 200px;
+
+  .functioning h2 {
+    margin-left: 40px;
   }
 
-  .functioning-display {
-    flex-direction: row;
-    margin-left: 259px;
-  }
-  .functioning h2 {
-    margin-left: 259px;
+  .functioning {
+    justify-content: center;
   }
 
   .button-desktop {
-    margin-right: 20px;
+    margin-right: 65px;
   }
 
   /*Restaurant*/
 
   .restaurant {
-    height: 940px;
-  }
-
-  .restaurant h2 {
-    margin-bottom: 40px;
-    margin-left: -89px;
-  }
-
-  .desktop_title {
-    margin-left: 347px;
-    margin-top: -8px;
+    height: 1160px;
   }
 
   .desktop_restaurant {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
   }
 
-  .restaurant-content {
-    height: 335px;
-    width: 30%;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 80px;
+  .desktop_title {
+    margin-left: 0px;
+    margin-top: 0px;
   }
 
+  .restaurant h2 {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+  }
+
+  .restaurant-content {
+    height: 450px;
+    width: 34%;
+    margin-right: 60px;
+  }
   .restaurant-content img {
-    width: 100%;
-    height: 250px;
+    height: 345px;
   }
 
   .restaurant-new {
@@ -897,3 +853,10 @@ h1 {
     margin-left: 24px;
   }
 }
+
+@media only screen and (min-width: 2560px) {
+  .restaurant h2 {
+    margin-left: 1%;
+  }
+}
+
