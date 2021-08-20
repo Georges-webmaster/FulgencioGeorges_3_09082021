@@ -542,8 +542,12 @@ h1 {
 
   footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
+  }
+
+  .desktop-footer {
+    margin-right: 20px;
   }
 }
 
@@ -652,27 +656,16 @@ h1 {
 
   footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
   }
 
+  .logo-footer {
+    margin-left: 42px;
+  }
+
   .desktop-footer {
-    display: flex;
-    flex-direction: column;
-    margin-right: 170px;
-  }
-
-  .logo_footer {
-    margin-left: 200px;
-  }
-
-  .logo_footer h2 {
-    padding-bottom: 0px;
-    margin-left: -16px;
-  }
-
-  .footer_link {
-    margin-left: 24px;
+    margin-right: 46px;
   }
 }
 
@@ -741,30 +734,12 @@ h1 {
   }
 
   /*Footer*/
-
-  footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
+  .logo-footer {
+    margin-left: 49px;
   }
 
   .desktop-footer {
-    display: flex;
-    flex-direction: column;
-    margin-right: 170px;
-  }
-
-  .logo_footer {
-    margin-left: 200px;
-  }
-
-  .logo_footer h2 {
-    padding-bottom: 0px;
-    margin-left: -16px;
-  }
-
-  .footer_link {
-    margin-left: 24px;
+    margin-right: 54px;
   }
 }
 
@@ -827,36 +802,27 @@ h1 {
   }
 
   /*Footer*/
-
-  footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
+  .logo-footer {
+    margin-left: 167px;
   }
 
   .desktop-footer {
-    display: flex;
-    flex-direction: column;
-    margin-right: 170px;
-  }
-
-  .logo_footer {
-    margin-left: 200px;
-  }
-
-  .logo_footer h2 {
-    padding-bottom: 0px;
-    margin-left: -16px;
-  }
-
-  .footer_link {
-    margin-left: 24px;
+    margin-right: 228px;
   }
 }
 
 @media only screen and (min-width: 2560px) {
+  /*Resraurant*/
   .restaurant h2 {
     margin-left: 1%;
   }
-}
 
+  /*Footer*/
+  .logo-footer {
+    margin-left: 346px;
+  }
+
+  .desktop-footer {
+    margin-right: 406px;
+  }
+}
