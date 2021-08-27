@@ -211,6 +211,7 @@ h1 {
   }
 
   .restaurant-content {
+    position: relative;
     width: 100%;
     height: 260px;
     background-color: #ffffff;
@@ -226,9 +227,9 @@ h1 {
   }
 
   .restaurant-new {
-    position: relative;
-    left: 165px;
-    top: -190px;
+    position: absolute;
+    right: 10px;
+    top: -5px;
     width: 90px;
     height: 30px;
     line-height: 30px;
@@ -239,7 +240,8 @@ h1 {
   }
   .restaurant-txt {
     margin-left: 15px;
-    margin-top: -50px;
+    margin-top: 0px;
+    
   }
 
   .restaurant-txt-bold {
@@ -250,10 +252,15 @@ h1 {
     line-height: 0px;
   }
 
+  .restaurant-heart 
+
+  {
+position: absolute;
+bottom: 29px;
+right: 20px;
+  }
+
   .fa-heart {
-    position: relative;
-    left: 200px;
-    top: -49px;
     font-size: 25px;
   }
 
@@ -311,155 +318,10 @@ h1 {
     line-height: 78px;
     font-weight: bolder;
     margin-left: -8px;
-  }
-  /*Restaurant*/
 
-  .restaurant-new {
-    left: 218px;
-  }
-
-  .fa-heart {
-    left: 255px;
-  }
-
-  /****Responsive Mobile 425px Taille L ****/
-}
-
-@media only screen and (min-width: 425px) {
-  /*Localisation géographique*/
-
-  /*Fonctionnement*/
-
-  /*Restaurant*/
-
-  .restaurant-new {
-    left: 265px;
-  }
-
-  .fa-heart {
-    left: 310px;
   }
 }
 
-@media only screen and (min-width: 440px) {
-  /*Localisation géographique*/
-
-  /*Fonctionnement*/
-
-  /*Restaurant*/
-
-  .restaurant-new {
-    left: 405px;
-  }
-  .restaurant-new {
-    left: 280px;
-  }
-  .fa-heart {
-    left: 320px;
-  }
-}
-
-@media only screen and (min-width: 460px) {
-  /*Localisation géographique*/
-
-  /*Fonctionnement*/
-
-  /*Restaurant*/
-
-  .restaurant-new {
-    left: 405px;
-  }
-  .restaurant-new {
-    left: 280px;
-  }
-  .fa-heart {
-    left: 320px;
-  }
-}
-
-@media only screen and (min-width: 475px) {
-  /*Localisation géographique*/
-
-  /*Fonctionnement*/
-
-  /*Restaurant*/
-
-  .restaurant-new {
-    left: 430px;
-  }
-  .restaurant-new {
-    left: 310px;
-  }
-  .fa-heart {
-    left: 353px;
-  }
-}
-
-@media only screen and (min-width: 490px) {
-  /*Localisation géographique* A retier plus pour version finale/
-
-  /*Fonctionnement*/
-
-  /*Restaurant*/
-
-  .restaurant-new {
-    left: 430px;
-  }
-  .restaurant-new {
-    left: 330px;
-  }
-  .fa-heart {
-    left: 372px;
-  }
-}
-
-@media only screen and (min-width: 530px) {
-  /*Fonctionnement*/
-
-  /*Restaurant*/
-
-  .restaurant-new {
-    left: 430px;
-  }
-  .restaurant-new {
-    left: 370px;
-  }
-  .fa-heart {
-    left: 410px;
-  }
-}
-
-@media only screen and (min-width: 550px) {
-  /*Fonctionnement*/
-
-  /*Restaurant*/
-
-  .restaurant-new {
-    left: 430px;
-  }
-  .restaurant-new {
-    left: 390px;
-  }
-  .fa-heart {
-    left: 432px;
-  }
-}
-
-@media only screen and (min-width: 550px) {
-  /*Fonctionnement*/
-
-  /*Restaurant*/
-
-  .restaurant-new {
-    left: 430px;
-  }
-  .restaurant-new {
-    left: 390px;
-  }
-  .fa-heart {
-    left: 432px;
-  }
-}
 
 /****Responsive Tablet 768px****/
 
@@ -529,14 +391,6 @@ h1 {
     height: 290px;
   }
 
-  .restaurant-new {
-    left: 605px;
-    top: -300px;
-  }
-
-  .fa-heart {
-    left: 650px;
-  }
 
   /*Footer*/
 
@@ -638,20 +492,6 @@ h1 {
     height: 295px;
   }
 
-  .restaurant-new {
-    /*Affichage à reprendre en 1200px ok en 1900px*/
-    left: 310px;
-    top: -260px;
-  }
-
-  .restaurant-txt {
-    margin-top: -36px;
-  }
-
-  .fa-heart {
-    left: 360px;
-  }
-
   /*Footer*/
 
   footer {
@@ -723,16 +563,6 @@ h1 {
     margin-top: 0px;
   }
 
-  .restaurant-new {
-    /*Affichage à reprendre en 1200px ok en 1900px*/
-    left: 310px;
-    top: -260px;
-  }
-
-  .fa-heart {
-    left: 360px;
-  }
-
   /*Footer*/
   .logo-footer {
     margin-left: 49px;
@@ -789,16 +619,6 @@ h1 {
   }
   .restaurant-content img {
     height: 345px;
-  }
-
-  .restaurant-new {
-    /*Affichage à reprendre en 1200px ok en 1900px*/
-    left: 310px;
-    top: -260px;
-  }
-
-  .fa-heart {
-    left: 360px;
   }
 
   /*Footer*/
