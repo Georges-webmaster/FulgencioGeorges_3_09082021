@@ -1,1 +1,0 @@
-# FulgencioGeorges_3_09082021
