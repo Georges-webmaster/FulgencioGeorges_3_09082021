@@ -266,12 +266,21 @@ h1 {
     margin-top: 0px;
   }
 
+  .restaurant-content a 
+
+  {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    color: black;
+  }
+
   /*Footer*/
 
   footer {
     background-color: #353535;
     height: 195px;
     padding-top: 20px;
+    color: black;
   }
 
   .logo-footer {
@@ -617,6 +626,11 @@ h1 {
   }
 
   /*Footer*/
+
+  footer {
+    justify-content: space-around;
+  }
+
   .logo-footer {
     margin-left: 167px;
   }
