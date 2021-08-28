@@ -56,22 +56,30 @@ h1 {
     line-height: 49px;
   }
 
-  .header-palette {
+  /*Header du Menu La Palette du goût et tester pour autres menus*/
+
+  .header-menu {
     background-color: #ffffff;
   }
 
-  .header-palette-display {
+  .header-menu-display {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     height: 60px;
-    width: 100%;
+  }
+  .header-menu-display a {
+    text-decoration: none;
+    color: #000000;
   }
 
-  .header-palette img {
+  .header-menu img {
     object-fit: cover;
     width: 100%;
     height: 225px;
   }
+
+  
 
   /*Baseline*/
 
