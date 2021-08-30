@@ -22,8 +22,11 @@ h1 {
 /****Faire l'ajustement pour un mobile small 320 px****/
 
 /****Résolution pour un mobile taille S ****/
+
 @media only screen and (min-width: 100px) {
-  /*Header*/
+  /*******Page Accueil********/
+
+  /***Header***/
 
   h1.title_website {
     display: flex;
@@ -39,7 +42,7 @@ h1 {
     /*Ombre à revoir*/
   }
 
-  /*Localisation géographique*/
+  /***Localisation géographique***/
 
   .localization-town {
     display: flex;
@@ -57,183 +60,7 @@ h1 {
     line-height: 49px;
   }
 
-  /*Header du Menu La Palette du goût et teste pour autres menus*/
-
-  .header-menu {
-    background-color: #ffffff;
-  }
-
-  .header-menu-display {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 60px;
-  }
-
-  .header-menu-display a {
-    text-decoration: none;
-    color: #000000;
-  }
-
-  /*Affichage du menu*/
-
-  /* Titre du Menu restaurant La palette du goût*/
-
-  .menu-display {
-    background-color: #f6f6f6;
-    border-radius: 30px 30px 0px 0px;
-    height: 1160px;
-  }
-
-  .menu-display img {
-    object-fit: cover;
-    width: 100%;
-    height: 225px;
-    border-radius: 0px 0px 30px 30px;
-  }
-
-  .menu-title {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .menu-title h2 {
-    font-family: "Shrikhand", cursive;
-  }
-
-  /*Affichage des entrées*/
-
-  /*Titre de l'entrée*/
-
-  .entrance-title {
-    font-weight: normal;
-    margin-left: 20px;
-  }
-
-  .entrance-title h3 {
-    border-bottom: 3px solid #99e2d0;
-    width: 20%;
-  }
-
-  /*Flex pour les 3 blocs des entrées sans le titre*/
-
-  .entrance-presentation {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .entrance {
-    background-color: #ffffff;
-    border-radius: 15px 15px 15px 15px;
-    height: 70px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .entrance-alignement {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .entrance-bold {
-    font-weight: bold;
-    margin-bottom: 0px;
-    margin-left: 10px;
-  }
-
-  .entrance-price {
-    font-weight: bold;
-    margin-top: 5px;
-  }
-
-  .entrance-txt {
-    font-size: 14px;
-    margin-top: 5px;
-  }
-
-  /*Affichage des plats*/
-
-  /*Titre de l'entrée*/
-
-  .dish-title {
-    font-weight: normal;
-    margin-left: 20px;
-  }
-
-  .dish-title h3 {
-    border-bottom: 3px solid #99e2d0;
-    width: 20%;
-  }
-
-
-  /*Flex pour les 3 blocs des Plats sans le titre*/
-
-
-  .dish-presentation {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .dish {
-    background-color: #ffffff;
-    border-radius: 15px 15px 15px 15px;
-    height: 70px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .dish-bold {
-    font-weight: bold;
-    margin-bottom: 0px;
-    margin-left: 10px;
-  }
-
-  .dish-alignement {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .dish-txt {
-    font-size: 14px;
-    margin-top: 5px;
-  }
-
-  .dish-price {
-    font-weight: bold;
-    margin-top: 5px;
-  }
-
-
-  /*Affichage des desserts*/
-
-  /*Titre des desserts*/
-
-
-  
-.dessert-title
-
-
-
-.dessert-title h3 
-
-
-
-.dessert-presentation
-
-
-
-
-
-
-
-  /*Baseline*/
+  /***Baseline***/
 
   .baseline {
     height: 325px;
@@ -284,7 +111,7 @@ h1 {
     font-weight: bolder;
   }
 
-  /*Fonctionnement*/
+  /***Fonctionnement***/
 
   .functioning {
     height: 375px;
@@ -369,7 +196,7 @@ h1 {
     margin-left: -12px;
   }
 
-  /*Restaurant*/
+  /***Restaurant***/
 
   .restaurant {
     height: 1300px;
@@ -449,7 +276,7 @@ h1 {
     color: black;
   }
 
-  /*Footer*/
+  /***Footer***/
 
   footer {
     background-color: #353535;
@@ -488,6 +315,270 @@ h1 {
     line-height: 25px;
     font-family: "Roboto", sans-serif;
   }
+
+  /******* Menu La Palette du goût et test pour autres menus *******/
+
+  /***Header****/
+
+  .header-menu {
+    background-color: #ffffff;
+  }
+
+  .header-menu-display {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+  }
+
+  .header-menu-display a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  /***Affichage du menu***/
+
+  /***Titre du Menu restaurant La palette du goût***/
+
+  .menu-display {
+    background-color: #f6f6f6;
+    border-radius: 30px 30px 0px 0px;
+    height: 1220px;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 225px;
+    border-radius: 0px 0px 30px 30px;
+  }
+
+  .menu-title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .menu-title h2 {
+    font-family: "Shrikhand", cursive;
+  }
+
+  /***Affichage des entrées***/
+
+  /***Titre Entrée***/
+
+  .entrance-title {
+    font-weight: normal;
+    margin-left: 20px;
+  }
+
+  .entrance-title h3 {
+    border-bottom: 3px solid #99e2d0;
+    width: 20%;
+  }
+
+  /***Flex pour les 3 blocs des entrées sans le titre***/
+
+  .entrance-presentation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .entrance {
+    background-color: #ffffff;
+    border-radius: 15px 15px 15px 15px;
+    height: 70px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .entrance-alignement {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .entrance-bold {
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-left: 10px;
+  }
+
+  .entrance-price {
+    font-weight: bold;
+    margin-top: 5px;
+  }
+
+  .entrance-txt {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  /***Affichage des plats***/
+
+  /***Titre de l'entrée***/
+
+  .dish-title {
+    font-weight: normal;
+    margin-left: 20px;
+  }
+
+  .dish-title h3 {
+    border-bottom: 3px solid #99e2d0;
+    width: 20%;
+  }
+
+  /***Flex pour les 3 blocs des Plats sans le titre***/
+
+  .dish-presentation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dish {
+    background-color: #ffffff;
+    border-radius: 15px 15px 15px 15px;
+    height: 70px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .dish-bold {
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-left: 10px;
+  }
+
+  .dish-alignement {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .dish-txt {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .dish-price {
+    font-weight: bold;
+    margin-top: 5px;
+  }
+
+  /***Affichage des desserts***/
+
+  /***Titre des desserts***/
+
+  .dessert-title {
+    font-weight: normal;
+    margin-left: 20px;
+  }
+
+  .dessert-title h3 {
+    border-bottom: 3px solid #99e2d0;
+    width: 12%;
+  }
+  /***Flex pour les 3 blocs des desserts sans le titre***/
+
+  .dessert-presentation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dessert {
+    background-color: #ffffff;
+    border-radius: 15px 15px 15px 15px;
+    height: 70px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .dessert-bold {
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-left: 10px;
+  }
+
+  .dessert-alignement {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .dessert-txt {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .dessert-price {
+    font-weight: bold;
+    margin-top: 5px;
+  }
+
+  /***Affichage du bouton du menu entrée***/
+
+  .menu-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-button button {
+    border-radius: 20px;
+    width: 53%;
+    height: 50px;
+    background-color: #9356dc;
+    border: 20px;
+    color: #ffffff;
+    margin-top: 44px;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+
+  /***Footer Menu la Palette du goût***/
+
+  .footer-menu {
+    background-color: #353535;
+    height: 195px;
+    padding-top: 20px;
+    color: black;
+  }
+
+  .logo-footer-menu {
+    margin-left: 25px;
+    margin-bottom: 20px;
+  }
+
+  .logo-footer-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Shrikhand", cursive;
+  }
+
+  .fa-utensils,
+  .fa-hands-helping {
+    margin-right: 10px;
+  }
+
+  .fa-hands-helping {
+    font-size: 10px;
+  }
+
+  .footer_link-menu {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 25px;
+  }
+
+  .footer_link-menu {
+    line-height: 25px;
+    font-family: "Roboto", sans-serif;
+  }
 }
 
 /****Responsive Mobile 375px Taille M ****/
@@ -500,6 +591,14 @@ h1 {
     line-height: 78px;
     font-weight: bolder;
     margin-left: -8px;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  /*Menu carte*/
+
+  .entrance-title h3 {
+    width: 13%;
   }
 }
 
@@ -581,6 +680,27 @@ h1 {
 
   .desktop-footer {
     margin-right: 20px;
+  }
+
+  /*Affichage du menu La palette du goût*/
+
+  .header-menu-display {
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .menu-title {
+    justify-content: space-between;
+
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /*Menu carte Titre style*/
+
+  .entrance-title h3 {
+    width: 7%;
   }
 }
 
@@ -686,6 +806,21 @@ h1 {
   .desktop-footer {
     margin-right: 46px;
   }
+
+  /*** Carte Menu restaurant***/
+
+  /*Menu carte Titre style*/
+
+  .entrance-title h3 {
+    width: 5%;
+  }
+
+  /*Footer Menu Carte */
+
+  .desktop-footer-menu {
+    margin-right: 0px;
+    padding-right: 20px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -750,6 +885,12 @@ h1 {
   .desktop-footer {
     margin-right: 54px;
   }
+
+  /*carte menu*/
+
+  .entrance-title h3 {
+    width: 5%;
+  }
 }
 
 /****Test Responsive Grands écrans d'ordinateurs valeur entre 992px - 1199px page accueil****/
@@ -813,6 +954,18 @@ h1 {
   .desktop-footer {
     margin-right: 228px;
   }
+
+  /*carte menu*/
+
+  .entrance-title h3 {
+    width: 4%;
+  }
+
+  /*Footer carte menu*/
+
+  .footer-menu {
+    justify-content: space-between;
+  }
 }
 
 @media only screen and (min-width: 2560px) {
@@ -828,5 +981,11 @@ h1 {
 
   .desktop-footer {
     margin-right: 406px;
+  }
+
+  /*Carte Menu*/
+
+  .entrance-title h3 {
+    width: 4%;
   }
 }
