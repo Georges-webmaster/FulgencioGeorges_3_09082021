@@ -592,12 +592,33 @@ h1 {
     font-weight: bolder;
     margin-left: -8px;
   }
+
+  /*Menu carte style Titre entrée*/
+
+  .entrance-title h3 {
+    border-bottom: 3px solid #99e2d0;
+    width: 15%;
+  }
+
+  .dish-title h3 {
+    width: 15%;
+  }
+  .dessert-title h3 {
+    width: 15%;
+  }
 }
 
 @media only screen and (min-width: 425px) {
   /*Menu carte*/
 
   .entrance-title h3 {
+    width: 13%;
+  }
+
+  .dish-title h3 {
+    width: 13%;
+  }
+  .dessert-title h3 {
     width: 13%;
   }
 }
@@ -679,7 +700,11 @@ h1 {
   }
 
   .desktop-footer {
-    margin-right: 20px;
+    padding-right: 20px;
+  }
+
+  .logo-footer {
+    padding-left: 20px;
   }
 
   /*Affichage du menu La palette du goût*/
@@ -700,6 +725,12 @@ h1 {
   /*Menu carte Titre style*/
 
   .entrance-title h3 {
+    width: 7%;
+  }
+  .dish-title h3 {
+    width: 7%;
+  }
+  .dessert-title h3 {
     width: 7%;
   }
 }
@@ -814,6 +845,12 @@ h1 {
   .entrance-title h3 {
     width: 5%;
   }
+  .dish-title h3 {
+    width: 5%;
+  }
+  .dessert-title h3 {
+    width: 5%;
+  }
 
   /*Footer Menu Carte */
 
@@ -879,16 +916,24 @@ h1 {
 
   /*Footer*/
   .logo-footer {
-    margin-left: 49px;
+    margin-left: 35px;
   }
 
   .desktop-footer {
-    margin-right: 54px;
+    margin-right: 35px;
   }
+
+ 
 
   /*carte menu*/
 
   .entrance-title h3 {
+    width: 5%;
+  }
+  .dish-title h3 {
+    width: 5%;
+  }
+  .dessert-title h3 {
     width: 5%;
   }
 }
@@ -948,17 +993,29 @@ h1 {
   }
 
   .logo-footer {
-    margin-left: 167px;
-  }
+padding-left: 0px;
+}
 
-  .desktop-footer {
-    margin-right: 228px;
-  }
+.desktop-footer
+
+{
+  padding-right: 72px;
+}
 
   /*carte menu*/
 
   .entrance-title h3 {
-    width: 4%;
+    width: 3%;
+  }
+  .dish-title h3 {
+    width: 3%;
+  }
+  .dessert-title h3 {
+    width: 3%;
+  }
+
+  .menu-button button {
+    width: 35%;
   }
 
   /*Footer carte menu*/
@@ -975,17 +1032,20 @@ h1 {
   }
 
   /*Footer*/
-  .logo-footer {
-    margin-left: 346px;
-  }
-
-  .desktop-footer {
-    margin-right: 406px;
-  }
 
   /*Carte Menu*/
 
+  .menu-button button {
+    width: 25%;
+  }
+
   .entrance-title h3 {
-    width: 4%;
+    width: 2%;
+  }
+  .dish-title h3 {
+    width: 2%;
+  }
+  .dessert-title h3 {
+    width: 2%;
   }
 }
