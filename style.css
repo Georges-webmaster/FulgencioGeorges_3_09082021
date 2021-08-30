@@ -5,7 +5,8 @@
   /*Retirer le widht 100%*/
 }
 
-* {
+*,
+::after {
   box-sizing: border-box;
 }
 
@@ -56,7 +57,7 @@ h1 {
     line-height: 49px;
   }
 
-  /*Header du Menu La Palette du goût et tester pour autres menus*/
+  /*Header du Menu La Palette du goût et teste pour autres menus*/
 
   .header-menu {
     background-color: #ffffff;
@@ -68,12 +69,15 @@ h1 {
     align-items: center;
     height: 60px;
   }
+
   .header-menu-display a {
     text-decoration: none;
     color: #000000;
   }
 
-  /* Menu des restaurants*/
+  /*Affichage du menu*/
+
+  /* Titre du Menu restaurant La palette du goût*/
 
   .menu-display {
     background-color: #f6f6f6;
@@ -97,27 +101,48 @@ h1 {
   .menu-title h2 {
     font-family: "Shrikhand", cursive;
   }
-  /*Flex pour les 3 blocs du menu*/
-  .entrance-display {
+
+  /*Affichage des entrées*/
+
+  /*Titre de l'entrée*/
+
+  .entrance-title {
+    font-weight: normal;
+    margin-left: 20px;
+  }
+
+  .entrance-title h3 {
+    border-bottom: 3px solid #99e2d0;
+    width: 20%;
+  }
+
+  /*Flex pour les 3 blocs des entrées sans le titre*/
+
+  .entrance-presentation {
     display: flex;
     flex-direction: column;
   }
 
-  .entrance-one {
+  .entrance {
     background-color: #ffffff;
     border-radius: 15px 15px 15px 15px;
     height: 70px;
     margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
-  .entrance-display-one {
+  .entrance-alignement {
     display: flex;
     justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .entrance-bold {
     font-weight: bold;
     margin-bottom: 0px;
+    margin-left: 10px;
   }
 
   .entrance-price {
@@ -125,10 +150,88 @@ h1 {
     margin-top: 5px;
   }
 
-  .entrance-alignement {
+  .entrance-txt {
     font-size: 14px;
     margin-top: 5px;
   }
+
+  /*Affichage des plats*/
+
+  /*Titre de l'entrée*/
+
+  .dish-title {
+    font-weight: normal;
+    margin-left: 20px;
+  }
+
+  .dish-title h3 {
+    border-bottom: 3px solid #99e2d0;
+    width: 20%;
+  }
+
+
+  /*Flex pour les 3 blocs des Plats sans le titre*/
+
+
+  .dish-presentation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dish {
+    background-color: #ffffff;
+    border-radius: 15px 15px 15px 15px;
+    height: 70px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .dish-bold {
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-left: 10px;
+  }
+
+  .dish-alignement {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .dish-txt {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .dish-price {
+    font-weight: bold;
+    margin-top: 5px;
+  }
+
+
+  /*Affichage des desserts*/
+
+  /*Titre des desserts*/
+
+
+  
+.dessert-title
+
+
+
+.dessert-title h3 
+
+
+
+.dessert-presentation
+
+
+
+
+
+
 
   /*Baseline*/
 
