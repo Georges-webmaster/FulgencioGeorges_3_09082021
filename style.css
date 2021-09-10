@@ -19,6 +19,40 @@ h1 {
   font-family: "Shrikhand", cursive; /*Police Logo et titres utilisés Shrikhand Regular 400*/
 }
 
+/* Page d’accueil “loading spinner”*/
+/*1 à 3 secondes  couvrir l'intégralité de l'écran*/
+
+
+
+.loader
+
+{
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.loader-quart {
+  border-radius: 50%;
+  border: 6px solid blue;
+  position: relative;
+}
+
+.loader-quart:after 
+
+{
+  content: ();
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-top: 6px solid red;
+  
+
+
+}
+
 /****Faire l'ajustement pour un mobile small 320 px****/
 
 /****Résolution pour un mobile taille S ****/
@@ -580,21 +614,13 @@ h1 {
     font-family: "Roboto", sans-serif;
   }
 
+  /******* Menu La note enchantée et test pour autres menus *******/
 
-/******* Menu La note enchantée et test pour autres menus *******/
-
-.menu-display-enchantee
-{
-  background-color: #f6f6f6;
+  .menu-display-enchantee {
+    background-color: #f6f6f6;
     border-radius: 30px 30px 0px 0px;
     height: 1305px;
-}
-
-
-
-
-
-
+  }
 }
 
 /****Responsive Mobile 375px Taille M ****/
@@ -939,8 +965,6 @@ h1 {
     margin-right: 35px;
   }
 
- 
-
   /*carte menu*/
 
   .entrance-title h3 {
@@ -1009,14 +1033,12 @@ h1 {
   }
 
   .logo-footer {
-padding-left: 0px;
-}
+    padding-left: 0px;
+  }
 
-.desktop-footer
-
-{
-  padding-right: 72px;
-}
+  .desktop-footer {
+    padding-right: 72px;
+  }
 
   /*carte menu*/
 
