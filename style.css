@@ -19,39 +19,11 @@ h1 {
   font-family: "Shrikhand", cursive; /*Police Logo et titres utilisés Shrikhand Regular 400*/
 }
 
-/* Page d’accueil “loading spinner”*/
-/*1 à 3 secondes  couvrir l'intégralité de l'écran*/
 
 
 
-.loader
-
-{
-  width: 50px;
-  height: 50px;
-  position: relative;
-}
-
-.loader-quart {
-  border-radius: 50%;
-  border: 6px solid blue;
-  position: relative;
-}
-
-.loader-quart:after 
-
-{
-  content: ();
-  position: absolute;
-  top: 0; 
-  left: 0;
-  width: 50px;
-  height: 50px;
-  border-top: 6px solid red;
-  
 
 
-}
 
 /****Faire l'ajustement pour un mobile small 320 px****/
 
@@ -75,6 +47,27 @@ h1 {
     box-shadow: 0px 0px 0px 0px;
     /*Ombre à revoir*/
   }
+
+/* Page d’accueil “loading spinner”*/
+/*1 à 3 secondes  couvrir l'intégralité de l'écran*/
+
+  .loader {
+
+  margin: auto;
+  border: 20px solid #f6f6f6;
+  border-radius: 50%;
+  border-top: 20px solid #9356dc;
+  width: 200px;
+  height: 200px;
+  animation: spinner 4s linear infinite;
+}
+
+
+@keyframes spinner {
+
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
   /***Localisation géographique***/
 
@@ -129,20 +122,39 @@ h1 {
     line-height: 5px;
   }
 
+  /********Mise en place pour l'animation du bouton*********/
+
   .baseline-button {
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    
   }
+
+  
 
   .baseline button {
     border-radius: 20px;
     width: 74%;
     height: 50px;
-    background-color: #9356dc;
+    
     border: 20px;
     color: #ffffff;
     font-weight: bolder;
+    background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+
+    box-shadow: 5px 5px 5px 0px #B998CE;
+    
+    
+    
+  }
+
+  .baseline button:hover {
+    cursor: pointer;
+background: linear-gradient(to bottom, #FF79DA 0%, #FA77D6 50%, #9356DC 100%);
+box-shadow: 10px 10px 14px 3px #B998CE;
+    
+
   }
 
   /***Fonctionnement***/
@@ -302,6 +314,41 @@ h1 {
   .restaurant-text {
     margin-left: 15px;
     margin-top: 0px;
+  }
+
+  /*Couleur des boutons principaux s'éclaircir et l'ombre plus visible*/
+
+  /*Animation coeur Sauvegarder les menus préférés*/
+
+  .restaurant-animation {
+    position: relative;
+  }
+
+  .animationHeart {
+    position: absolute;
+    color: transparent;
+    left: 0;
+  }
+
+  .animationHeart:hover {
+    cursor: pointer;
+    background: linear-gradient(#9356dc, #ff79da);
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    animation: keyAnimHerat 0, 5s linear;
+  }
+
+  @keyframes keyAnimHerat {
+    0% {
+      background-size: 100% 0%;
+    }
+
+    100% {
+      background-size: 100% 100%;
+    }
   }
 
   .restaurant-content a {
