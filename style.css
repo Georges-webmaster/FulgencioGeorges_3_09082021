@@ -51,7 +51,18 @@ h1 {
 /* Page d’accueil “loading spinner”*/
 /*1 à 3 secondes  couvrir l'intégralité de l'écran*/
 
-  .loader {
+
+.load-display
+
+{
+  position: relative;
+  background-color: transparent;
+}
+
+  .loader-spinner {
+position: absolute;
+top: 400px;
+left: 600px;
 
   margin: auto;
   border: 20px solid #f6f6f6;
@@ -141,21 +152,38 @@ h1 {
     border: 20px;
     color: #ffffff;
     font-weight: bolder;
-    background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
-
-    box-shadow: 5px 5px 5px 0px #B998CE;
     
+    background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+    box-shadow: 5px 5px 5px 0px #B998CE;
+   
+    position: relative;
+    z-index: 1;
     
     
   }
 
   .baseline button:hover {
     cursor: pointer;
-background: linear-gradient(to bottom, #FF79DA 0%, #FA77D6 50%, #9356DC 100%);
-box-shadow: 10px 10px 14px 3px #B998CE;
+    opacity: 0.8;
     
-
   }
+
+  .baseline button::after 
+
+  {
+content: "";
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+border-radius: 20px;
+background: linear-gradient(to bottom, #FF79DA 50%, #9356DC 100%);
+ opacity: 1;
+ z-index: -1;
+ transition: opacity 250ms;
+  }
+
 
   /***Fonctionnement***/
 
@@ -472,6 +500,8 @@ box-shadow: 10px 10px 14px 3px #B998CE;
     margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
+    position: relative;
+    cursor: pointer;
   }
 
   .entrance-alignement {
@@ -497,7 +527,68 @@ box-shadow: 10px 10px 14px 3px #B998CE;
     margin-top: 5px;
   }
 
+  /* Affichage pour validation utilisateur des plats*/
+
+  .dishes-validation
+
+  {
+background-color: #99E2D0;
+color: white;
+width: 65px;
+position: absolute;
+top: 0;
+right: 0;
+height: 100%;
+border: solid 1px #99E2D0;
+border-radius: 0px 20px 20px 0px;
+text-align: center;
+font-size: 1.5;
+transform: scaleX(0);
+transform-origin: right;
+transition: transform 300ms;
+transition-timing-function: ease-in-out;
+
+
+  }
+
+  .dishes-validation span 
+  
+  {
+
+    position: relative;
+    transform: rotate(-90deg);
+  }
+
+.dishes-validation span i
+
+{
+
+  margin-top: 30px;
+}
+
+.entrance:hover .dishes-validation
+
+{
+  transform: scaleX(1);
+}
+
+ .entrance:hover .dish-price
+
+{
+
+ transform: translate(-220%, 0%); 
+}
+
+.entrance:hover span i
+{
+  transform: rotate(90deg);
+  transition-duration: 600ms;
+  transition-delay: 200ms;
+}
+
   /***Affichage des plats***/
+
+  
 
   /***Titre de l'entrée***/
 
