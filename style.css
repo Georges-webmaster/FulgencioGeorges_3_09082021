@@ -2,6 +2,7 @@
 
 .bloc_page {
   margin: 0 auto;
+
   /*Retirer le widht 100%*/
 }
 
@@ -18,12 +19,6 @@ h2 {
 h1 {
   font-family: "Shrikhand", cursive; /*Police Logo et titres utilisés Shrikhand Regular 400*/
 }
-
-
-
-
-
-
 
 /****Faire l'ajustement pour un mobile small 320 px****/
 
@@ -48,37 +43,38 @@ h1 {
     /*Ombre à revoir*/
   }
 
-/* Page d’accueil “loading spinner”*/
-/*1 à 3 secondes  couvrir l'intégralité de l'écran*/
+  /* Page d’accueil “loading spinner”*/
+  /*1 à 3 secondes  couvrir l'intégralité de l'écran*/
 
+  .loading-display {
+    position: relative;
+  }
 
-.load-display
+  .loading-spinner {
+    position: absolute;
+    top: 320px;
+    left: 842px;
+    margin: auto;
+    border: 20px solid #9356dc;
+    border-radius: 50%;
+    border-top: 20px solid #ff79da;
+    border-left: 20px solid #ff79da;
+    width: 200px;
+    height: 200px;
+    animation: spinner 3s linear infinite;
+  }
 
-{
-  position: relative;
-  background-color: transparent;
-}
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
 
-  .loader-spinner {
-position: absolute;
-top: 400px;
-left: 600px;
-
-  margin: auto;
-  border: 20px solid #f6f6f6;
-  border-radius: 50%;
-  border-top: 20px solid #9356dc;
-  width: 200px;
-  height: 200px;
-  animation: spinner 4s linear infinite;
-}
-
-
-@keyframes spinner {
-
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
+    100% {
+      transform: rotate(360deg);
+      opacity: 0;
+    }
+  }
 
   /***Localisation géographique***/
 
@@ -139,51 +135,42 @@ left: 600px;
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    
   }
-
-  
 
   .baseline button {
     border-radius: 20px;
     width: 74%;
     height: 50px;
-    
+
     border: 20px;
     color: #ffffff;
     font-weight: bolder;
-    
-    background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
-    box-shadow: 5px 5px 5px 0px #B998CE;
-   
+
+    background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
+    box-shadow: 5px 5px 5px 0px #b998ce;
+
     position: relative;
     z-index: 1;
-    
-    
   }
 
   .baseline button:hover {
     cursor: pointer;
     opacity: 0.8;
-    
   }
 
-  .baseline button::after 
-
-  {
-content: "";
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-border-radius: 20px;
-background: linear-gradient(to bottom, #FF79DA 50%, #9356DC 100%);
- opacity: 1;
- z-index: -1;
- transition: opacity 250ms;
+  .baseline button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #ff79da 50%, #9356dc 100%);
+    opacity: 1;
+    z-index: -1;
+    transition: opacity 250ms;
   }
-
 
   /***Fonctionnement***/
 
@@ -527,68 +514,70 @@ background: linear-gradient(to bottom, #FF79DA 50%, #9356DC 100%);
     margin-top: 5px;
   }
 
+  /*Affichage des plats en animation*/
+
+  .entrance-menu {
+    opacity: 1;
+    transition: opacity;
+    animation: Amenudisplay 500ms 150ms;
+  }
+
+  @keyframes Amenudisplay {
+    0% {
+      transform: translateY(100px);
+      opacity: 1;
+      transition: 300ms;
+    }
+
+    50% {
+      opacity: 0.5;
+      transition: 800ms;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
   /* Affichage pour validation utilisateur des plats*/
 
-  .dishes-validation
-
-  {
-background-color: #99E2D0;
-color: white;
-width: 65px;
-position: absolute;
-top: 0;
-right: 0;
-height: 100%;
-border: solid 1px #99E2D0;
-border-radius: 0px 20px 20px 0px;
-text-align: center;
-font-size: 1.5;
-transform: scaleX(0);
-transform-origin: right;
-transition: transform 300ms;
-transition-timing-function: ease-in-out;
-
-
+  .dishes-validation {
+    background-color: #99e2d0;
+    color: white;
+    width: 65px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border: solid 1px #99e2d0;
+    border-radius: 0px 20px 20px 0px;
+    text-align: center;
+    font-size: 1.5;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 300ms ease-in-out;
   }
 
-  .dishes-validation span 
-  
-  {
-
-    position: relative;
-    transform: rotate(-90deg);
+  .dishes-validation span i {
+    margin-top: 30px;
+    font-size: 20px;
   }
 
-.dishes-validation span i
+  .entrance:hover .dishes-validation {
+    transform: scaleX(1);
+  }
 
-{
+  .entrance:hover .dish-price {
+    transform: translate(-220%, 0%);
+  }
 
-  margin-top: 30px;
-}
-
-.entrance:hover .dishes-validation
-
-{
-  transform: scaleX(1);
-}
-
- .entrance:hover .dish-price
-
-{
-
- transform: translate(-220%, 0%); 
-}
-
-.entrance:hover span i
-{
-  transform: rotate(90deg);
-  transition-duration: 600ms;
-  transition-delay: 200ms;
-}
+  .entrance:hover span i {
+    transform: rotate(360deg);
+    transition-duration: 600ms;
+    transition-delay: 200ms;
+  }
 
   /***Affichage des plats***/
-
-  
 
   /***Titre de l'entrée***/
 
