@@ -35,21 +35,17 @@
 
       <header class="header-menu">
         <!--En-tête de la page de menu-->
-
         <div class="header-menu-display">
-          <a
-            href="index.html"
-          >
+          <a href="index.html">
             <i class="fas fa-arrow-left"></i>
           </a>
-
           <h1>ohmyfood</h1>
         </div>
 
         <div>
           <img
             src="images/cite-rouge-a-la-francaise.jpg"
-            alt="menu à la française"
+            alt="Menu La palette du goût"
           />
         </div>
       </header>
@@ -58,17 +54,21 @@
         <!--Englobe la présentation contenu du menu-->
 
         <div class="menu-title">
-          <h2>À la française</h2>
+          <!--Affichage du titre menu et coeur-->
 
-          <span> <i class="far fa-heart"></i></span>
+          <h2>À la française</h2>
+          <div class="restaurantmenu-animation">
+            <span class="restaurant-heart">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-heart animationHeart"></i>
+            </span>
+          </div>
         </div>
 
         <div class="entrance-menu">
           <!--Englobe Titre et les trois blocs Entrées pour flex-->
-
           <div class="entrance-title">
             <!--Class pour titre-->
-
             <h3>ENTRÉES</h3>
           </div>
 
@@ -82,10 +82,17 @@
               <div class="entrance-alignement">
                 <!--Pour mise en place desciption et prix-->
                 <p class="entrance-txt">Aux zests d'orange</p>
-                <p class="entrance-price">25€</p>
-                <span>
-                  <i class="fas fa-chevron-circle-down"></i>
-                </span>
+
+                <div class="dish-price">
+                  <p class="entrance-price">25€</p>
+                </div>
+
+                <!--Création pour validation de prix-->
+                <div class="dishes-validation">
+                  <span>
+                    <i class="fas fa-chevron-circle-down"></i>
+                  </span>
+                </div>
               </div>
             </div>
 
@@ -95,10 +102,17 @@
               <div class="entrance-alignement">
                 <!--Pour mise en place desciption et prix-->
                 <p class="entrance-txt">Carotte, panais, topinambour</p>
-                <p class="entrance-price">35€</p>
-                <span>
+                <div class="dish-price"> 
+                  <p class="entrance-price">35€</p>
+                </div>
+               
+                <div class="dishes-validation">
+
+                  <span>
                   <i class="fas fa-chevron-circle-down"></i>
                 </span>
+
+                </div>
               </div>
             </div>
 
@@ -108,9 +122,18 @@
               <p class="entrance-bold">Soupe à l'oignon</p>
               <div class="entrance-alignement">
                 <p class="entrance-txt">Revistée</p>
-                <p class="entrance-price">20€</p>
-                <span>
+                <div class="dish-price">
+                  <p class="entrance-price">20€</p>
+
+                </div>
+                
+                <div class="dishes-validation">
+
+                  <span>
                   <i class="fas fa-chevron-circle-down"></i>
+                </span>
+
+                </div>
                 </span>
               </div>
             </div>
@@ -134,7 +157,18 @@
               <div class="dish-alignement">
                 <!--Pour mise en place desciption et prix-->
                 <p class="dish-txt">Accompagnées d'une purée de panais</p>
-                <p class="dish-price">40€</p>
+                <div class="dish-price">
+
+                   <p class="dishes-price">40€</p>
+                </div>
+               
+                <div class="dishes-validation">
+
+                  <span>
+                  <i class="fas fa-chevron-circle-down"></i>
+                </span>
+
+                </div>
               </div>
             </div>
 
@@ -145,7 +179,18 @@
               <div class="dish-alignement">
                 <!--Pour mise en place desciption et prix-->
                 <p class="dish-txt">Et parmentier de pommes de terres</p>
-                <p class="dish-price">35€</p>
+                <div class="dish-price">
+                   <p class="dishes-price">35€</p>
+
+                </div>
+               
+                <div class="dishes-validation">
+
+                  <span>
+                  <i class="fas fa-chevron-circle-down"></i>
+                </span>
+
+                </div>
               </div>
             </div>
 
@@ -156,7 +201,18 @@
               <div class="dish-alignement">
                 <!--Pour mise en place desciption et prix-->
                 <p class="dish-txt">Sur son lit de gnocchis aux légumes</p>
-                <p class="dish-price">44€</p>
+                <div class="dish-price">
+                   <p class="dishes-price">44€</p>
+
+                </div>
+               
+                <div class="dishes-validation">
+
+                  <span>
+                  <i class="fas fa-chevron-circle-down"></i>
+                </span>
+
+                </div>
               </div>
             </div>
           </div>
@@ -179,7 +235,18 @@
               <div class="dessert-alignement">
                 <!--Pour mise en place desciption et prix-->
                 <p class="dessert-txt">Et purée de noisettes</p>
-                <p class="dessert-price">18€</p>
+                <div class="dish-price">
+                    <p class="dessert-price">18€</p>
+
+                </div>
+              
+                <div class="dishes-validation">
+
+                  <span>
+                  <i class="fas fa-chevron-circle-down"></i>
+                </span>
+
+                </div>
               </div>
             </div>
 
@@ -190,7 +257,18 @@
               <div class="dessert-alignement">
                 <!--Pour mise en place desciption et prix-->
                 <p class="dessert-txt">Revisté</p>
-                <p class="dessert-price">22€</p>
+                <div class="dish-price">
+
+                  <p class="dessert-price">22€</p>
+                </div>
+                
+                <div class="dishes-validation">
+
+                  <span>
+                  <i class="fas fa-chevron-circle-down"></i>
+                </span>
+
+                </div>
               </div>
             </div>
 
@@ -201,12 +279,22 @@
               <div class="dessert-alignement">
                 <!--Pour mise en place desciption et prix-->
                 <p class="dessert-txt">Myrtilles et pâte d'ammande</p>
-                <p class="dessert-price">23€</p>
+                <div class="dish-price">
+                  <p class="dessert-price">23€</p>
+
+                </div>
+                
+                <div class="dishes-validation">
+
+                  <span>
+                  <i class="fas fa-chevron-circle-down"></i>
+                </span>
+
+                </div>
               </div>
             </div>
           </div>
         </div>
-
         <div class="menu-button">
           <!--Affichage de button-->
 
