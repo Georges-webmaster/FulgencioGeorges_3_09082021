@@ -19,7 +19,6 @@ h1 {
   font-family: "Shrikhand", cursive; /*Police Logo et titres utilisés Shrikhand Regular 400*/
 }
 
-
 /****Faire l'ajustement pour un mobile small 320 px****/
 
 /****Résolution pour un mobile taille S ****/
@@ -54,15 +53,18 @@ h1 {
     text-align: center;
     animation: loading 3s linear;
     z-index: 990;
-    display: none;
+    opacity: 0;
+    pointer-events: none;
   }
+
   @keyframes loading {
     0% {
-      display: block;
+      opacity: 1;
     }
 
     100% {
-      display: none;
+      opacity: 0;
+      
     }
   }
 
@@ -93,7 +95,7 @@ h1 {
     100% {
       transform: rotate(360deg);
       opacity: 0;
-      display: none;
+     
     }
   }
 
@@ -460,23 +462,49 @@ h1 {
 
   /***Titre du Menu restaurant La palette du goût***/
 
+  
+
+
+   
+ .transition-img 
+
+  {
+
+  position: relative;
+  z-index: 0;
+    
+    
+  }
+
+  .transition-img img
+
+  {
+width: 100%;
+    height: 240px;
+    border-radius: 0px 0px 0px 0px;
+    object-fit: cover;
+    
+  }
+
   .menu-display {
     background-color: #f6f6f6;
     border-radius: 30px 30px 0px 0px;
     height: 1205px;
+    position: absolute;
+    z-index: 3;
+    width: 95%;
+top: 279px;
+    
+    
   }
 
-  img {
-    object-fit: cover;
-    width: 100%;
-    height: 225px;
-    border-radius: 0px 0px 30px 30px;
-  }
 
   .menu-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #f1f0f1;
+   
   }
 
   .menu-title h2 {
@@ -513,11 +541,7 @@ h1 {
     margin-right: 10px;
     position: relative;
     cursor: pointer;
-    
   }
-
-
-
 
   .entrance-alignement {
     display: flex;
@@ -540,7 +564,6 @@ h1 {
   .entrance-txt {
     font-size: 12px;
     margin-top: 5px;
-    
   }
 
   /*Affichage des plats en animation*/
@@ -550,6 +573,10 @@ h1 {
     transition: opacity;
     animation: Amenudisplay 500ms 150ms;
   }
+
+
+
+
 
   @keyframes Amenudisplay {
     0% {
@@ -731,7 +758,6 @@ h1 {
   .dish-txt {
     font-size: 12px;
     margin-top: 5px;
-    
   }
 
   .dishes-price {
