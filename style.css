@@ -219,6 +219,12 @@ h1 {
     justify-content: flex-start;
   }
 
+  :hover.button-grey {
+    background-color: #f5edff;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 0px #9356dc;
+  }
+
   .button-number {
     width: 25px;
     height: 25px;
@@ -341,6 +347,12 @@ h1 {
     top: -10px;
   }
 
+  .restauranthome-heart {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+  }
+
   .fa-heart {
     font-size: 25px;
   }
@@ -353,10 +365,6 @@ h1 {
   /*Couleur des boutons principaux s'éclaircir et l'ombre plus visible*/
 
   /*Animation coeur Sauvegarder les menus préférés*/
-
-  .restaurant-animation {
-    position: relative;
-  }
 
   .restaurantmenu-animation {
     position: relative;
