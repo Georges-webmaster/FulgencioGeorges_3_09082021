@@ -337,7 +337,8 @@ h1 {
   .restaurant-heart {
     position: absolute;
     bottom: 28px;
-    right: 49px;
+    right: 15px;
+    top: -10px;
   }
 
   .fa-heart {
@@ -359,8 +360,6 @@ h1 {
 
   .restaurantmenu-animation {
     position: relative;
-    top: 45px;
-    left: 30px;
   }
 
   .animationHeart {
@@ -446,7 +445,7 @@ h1 {
 
   .header-menu-display {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 60px;
   }
