@@ -29,25 +29,27 @@
   </head>
   <body>
     <div class="bloc_page">
+      <!--Gestion du bloc page et des marges pour affichage-->
+
       <div class="loading-display">
+        <!--Mise en place du loading spinner-->
         <div class="loading-spinner"></div>
       </div>
+
       <header>
         <!--Emplacement de la balise Header et Bloc en-tête-->
         <h1 class="title_website">ohmyfood</h1>
-
-        <!--Menu navigation desktop attention au W3C-->
       </header>
 
       <div class="localization-town">
-        <!-- Préparation balise localisation Géographique Paris -->
+        <!-- Emplacement localisation Géographique Paris -->
 
         <span><i class="fas fa-map-marker-alt"></i></span>
         <p>Paris, Belleville</p>
       </div>
 
       <aside class="baseline">
-        <!-- Balise pour basline et Texte informatif -->
+        <!-- Balise pour la basline et le texte informatif -->
         <h2 class="title-baseline">Réservez le menu qui</h2>
         <h2 class="line-title">vous convient</h2>
         <span class="desktop-display">Réservez le menu qui vous convient</span>
@@ -63,12 +65,10 @@
       </aside>
 
       <section class="functioning">
-        <!-- Balise pour fonctionnement pour l'utilisateur -->
+        <!-- Balise pour les filtres pour l'utilisateur -->
         <h2>Fonctionnement</h2>
-
         <div class="functioning-display">
           <!--Bloc pour affichage en Tablet 768px-->
-
           <div class="button-desktop">
             <button class="button-grey">
               <span class="button-number">1</span>
@@ -76,20 +76,16 @@
               <span class="button-txt">Choisissez un restaurant</span>
             </button>
           </div>
-
           <div class="button-desktop">
             <button class="button-grey">
-              <!--Ne serait plus utile à voir en version finale-->
               <span class="button-number">2</span>
               <i class="fas fa-list"></i>
               <span class="button-txt">Composez votre menu</span>
             </button>
           </div>
-
           <div class="button-desktop">
             <button class="button-grey">
               <span class="button-number">3</span>
-
               <i class="fas fa-store"></i>
               <span class="button-txt-align">Dégustez au restaurant</span>
             </button>
@@ -99,87 +95,106 @@
 
       <section class="restaurant">
         <!-- Balise pour la sélection des restaurants -->
-
         <div class="desktop_title">
           <h2>Restaurants</h2>
         </div>
+
         <div class="desktop_restaurant">
           <!-- Balise pour affichage desktop -->
           <div class="restaurant-content">
             <!--Contenu la palette du goût-->
             <a href="menu-la-pallette-du-gout.html">
               <!--Lien pour les menus des restaurants-->
-              <img
-                src="images/menilmontant-la-palettte-du-gout.jpg"
-                alt=" Restaurant Ménilmontant La palette du goût"/>
-              <p class="restaurant-new">Nouveau</p>
+              <div>
+                <img
+                  src="images/menilmontant-la-palettte-du-gout.jpg"
+                  alt="Restaurant Ménilmontant La palette du goût"
+                />
+              </div>
               <div class="restaurant-txt">
+                <p class="restaurant-new">Nouveau</p>
                 <p class="restaurant-txt-bold">La palette du goût</p>
                 <p class="txt_city">Ménilmontant</p>
-                </a>    
-                <div class="restaurant-animation">
-                  <span class="restauranthome-heart">
-                    <i class="far fa-heart"></i>
-                    <i class="fas fa-heart animationHeart"></i>
-                  </span>
-                </div>
-              </div>     
+              </div>
+            </a>
+            <div class="restaurant-animation">
+              <span class="restauranthome-heart">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart animationHeart"></i>
+              </span>
+            </div>
           </div>
 
           <div class="restaurant-content">
             <!--Contenu la note enchantée-->
             <a href="menu-la-note-enchant%C3%A9e.html">
               <!--Lien pour les menus des restaurants-->
-              <img
-                src="images/charonne-la-note-enchantee.jpg"
-                alt="Restaurant Charonne La note enchantée"/>
-              <p class="restaurant-new">Nouveau</p>
+              <div>
+                <img
+                  src="images/charonne-la-note-enchantee.jpg"
+                  alt="Restaurant Charonne La note enchantée"
+                />
+              </div>
               <div class="restaurant-txt">
+                <p class="restaurant-new">Nouveau</p>
+
                 <p class="restaurant-txt-bold">La note enchantée</p>
                 <!--Voir pour le cursor pointeur-->
                 <p class="txt_city">Charonne</p>
-                  </a>
-                <span class="restauranthome-heart">
-                  <i class="far fa-heart"></i>
-                  <i class="fas fa-heart animationHeart"></i>
-                  <i class="fas fa-heart animationHeart"></i>
-                </span>
-              </div>  
+              </div>
+            </a>
+            <div class="restaurant-animation">
+              <span class="restauranthome-heart">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart animationHeart"></i>
+                <i class="fas fa-heart animationHeart"></i>
+              </span>
+            </div>
           </div>
 
           <div class="restaurant-content">
             <!--Contenu A la francaise Cité rouge-->
-
             <a href="menu-a-la-fran%C3%A7aise.html">
-              <img
-                src="images/cite-rouge-a-la-francaise.jpg"
-                alt="Restaurant Cité Rouge A la française"
-              />
+              <div>
+                <img
+                  src="images/cite-rouge-a-la-francaise.jpg"
+                  alt="Restaurant Cité Rouge A la française"
+                />
+              </div>
               <div class="restaurant-text">
                 <p class="restaurant-txt-bold">A la française</p>
                 <p class="txt_city">Cité Rouge</p>
-                  </a>
-                <span class="restauranthome-heart">
-                  <i class="far fa-heart"></i>
-                  <i class="fas fa-heart animationHeart"></i>
-                </span>
               </div>
+            </a>
+            <div class="restaurant-animation">
+              <span class="restauranthome-heart">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart animationHeart"></i>
+                <i class="fas fa-heart animationHeart"></i>
+              </span>
+            </div>
           </div>
+
           <div class="restaurant-content">
             <!--Contenu Le délice du sens-->
             <a href="menu-le-delice-des-sens.html">
-              <img
-                src="images/folie-mericourt-le-delice-du-sens.jpg"
-                alt="Restaurant Le délice du sens Folie-Méricourt"/>
+              <div>
+                <img
+                  src="images/folie-mericourt-le-delice-du-sens.jpg"
+                  alt="Restaurant Le délice du sens Folie-Méricourt"
+                />
+              </div>
               <div class="restaurant-text">
                 <p class="restaurant-txt-bold">Le délice du sens</p>
                 <p class="txt_city">Folie-Méricourt</p>
-                  </a>
-                <span class="restauranthome-heart">
-                  <i class="far fa-heart"></i>
-                  <i class="fas fa-heart animationHeart"></i>
-                </span>
               </div>
+            </a>
+            <div class="restaurant-animation">
+              <span class="restauranthome-heart">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart animationHeart"></i>
+              </span>
+            </div>
           </div>
         </div>
       </section>
@@ -213,7 +228,8 @@
           <div><a class="footer_link" href="#">Mentions légales</a></div>
           <div>
             <a class="footer_link" href="mailto:contact@ohmyfood.com"
-              >Contact</a>
+              >Contact</a
+            >
             <!--e-mail contact-->
           </div>
         </div>
