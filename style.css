@@ -1,9 +1,8 @@
-/*Styles généraux*/
+/**** **** Styles généraux **** ****/
 
 .bloc_page {
   margin: 0 auto;
 }
-/*Retirer le widht 100%*/
 
 *,
 ::after {
@@ -12,21 +11,20 @@
 
 p,
 h2 {
-  font-family: "Roboto", sans-serif; /*Police Texte utilisé Roboto Regular 400*/
+  font-family: "Roboto", sans-serif; /****Police Texte utilisé Roboto Regular 400****/
 }
 
 h1 {
-  font-family: "Shrikhand", cursive; /*Police Logo et titres utilisés Shrikhand Regular 400*/
+  font-family: "Shrikhand", cursive; /****Police Logo et titres utilisés Shrikhand Regular 400****/
 }
 
-/****Faire l'ajustement pour un mobile small 320 px****/
-
-/****Résolution pour un mobile taille S ****/
+/**** **** Résolution pour un mobile taille S mais travail avec résolution basse en 100px **** ****/
 
 @media only screen and (min-width: 100px) {
-  /*******Page Accueil********/
 
-  /***Header***/
+  /*** **** Page Accueil et pages web **** ****/
+
+  /*** Header ***/
 
   h1.title_website {
     display: flex;
@@ -42,8 +40,10 @@ h1 {
     /*Ombre à revoir*/
   }
 
-  /* Page d’accueil “loading spinner”*/
-  /*1 à 3 secondes  couvrir l'intégralité de l'écran*/
+  /**** Animation ****/
+
+  /**** Page d’accueil “Loading spinner”****/
+  /**** 1 à 3 secondes avec couverture de l'intégralité de l'écran ****/
 
   .loading-display {
     position: fixed;
@@ -97,7 +97,7 @@ h1 {
     }
   }
 
-  /***Localisation géographique***/
+  /**** Localisation géographique ****/
 
   .localization-town {
     display: flex;
@@ -150,7 +150,9 @@ h1 {
     line-height: 5px;
   }
 
-  /********Mise en place pour l'animation du bouton*********/
+  /**** Animation Au survol, couleur de fond plus clair et l’ombre plus visible ****/
+
+  /**** **** Mise en place pour l'animation boutons ***** ****/
 
   .baseline-button {
     display: flex;
@@ -190,7 +192,7 @@ h1 {
     transition: opacity 250ms;
   }
 
-  /***Fonctionnement***/
+  /**** Filtres Fonctionnement ****/
 
   .functioning {
     height: 375px;
@@ -211,7 +213,7 @@ h1 {
     display: flex;
     width: 92%;
     margin-bottom: 25px;
-    margin-left: 15px; /*Marge à gauche à vérifier*/
+    margin-left: 15px; 
     border: 20px;
     border-radius: 20px;
     background-color: #f6f6f6;
@@ -281,7 +283,7 @@ h1 {
     margin-left: -12px;
   }
 
-  /***Restaurant***/
+  /**** Affichage des menus des restaurants ****/
 
   .restaurant {
     height: 1300px;
@@ -362,10 +364,10 @@ h1 {
     margin-top: 0px;
   }
 
-  /*Couleur des boutons principaux s'éclaircir et l'ombre plus visible*/
+   /**** **** Animation "j'aime"**** ****/
 
-  /*Animation coeur Sauvegarder les menus préférés*/
-
+  /**** Animation coeur pour sauvegarder les menus préférés ****/
+ 
   .restaurantmenu-animation {
     position: relative;
   }
@@ -403,7 +405,7 @@ h1 {
     color: black;
   }
 
-  /***Footer***/
+  /**** Footer ****/
 
   footer {
     background-color: #353535;
@@ -443,7 +445,7 @@ h1 {
     font-family: "Roboto", sans-serif;
   }
 
-  /******* Menu La Palette du goût et test pour autres menus *******/
+  /**** **** Menu La Palette du goût et les autres menus *** ****/
 
   /***Header****/
 
@@ -463,7 +465,7 @@ h1 {
     color: #000000;
   }
 
-  /***Affichage du menu***/
+  /*** Affichage du menu ***/
 
   /***Titre du Menu restaurant La palette du goût***/
 
@@ -494,9 +496,9 @@ h1 {
     font-family: "Shrikhand", cursive;
   }
 
-  /***Affichage des entrées***/
+  /**** Affichage des entrées ****/
 
-  /***Titre Entrée***/
+  /**** Titre Entrée ****/
 
   .entrance-title {
     font-weight: normal;
@@ -508,7 +510,7 @@ h1 {
     width: 20%;
   }
 
-  /***Flex pour les 3 blocs des entrées sans le titre***/
+  /**** Flex pour les 3 blocs des entrées sans le titre ****/
 
   .entrance-presentation {
     display: flex;
@@ -548,8 +550,10 @@ h1 {
     font-size: 12px;
     margin-top: 5px;
   }
-
+  
+  /**** Animation ****/
   /*Affichage des plats en animation*/
+  /**** Apparition des plats progressives, un par un ou par groupe ****/
 
   .entrance-menu {
     opacity: 1;
@@ -620,7 +624,9 @@ h1 {
     }
   }
 
-  /* Affichage pour validation utilisateur des plats*/
+  /**** Animation ****/
+  /**** Affichage pour validation utilisateur des plats ****/
+  /*coche à droite du plat, coulisse de la droite vers la gauche*/
 
   .dishes-validation {
     background-color: #99e2d0;
@@ -633,7 +639,6 @@ h1 {
     border: solid 1px #99e2d0;
     border-radius: 0px 20px 20px 0px;
     text-align: center;
-    font-size: 1.5;
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 300ms ease-in-out;
@@ -690,9 +695,9 @@ h1 {
     transition-delay: 200ms;
   }
 
-  /***Affichage des plats***/
+  /*** Affichage des plats ***/
 
-  /***Titre de l'entrée***/
+  /*** Titre de l'entrée ***/
 
   .dish-title {
     font-weight: normal;
@@ -739,7 +744,7 @@ h1 {
     margin-top: 5px;
   }
 
-  /********Affichage du texte en responsive pour utilisateur*********/
+  /**** **** Affichage du texte en responsive pour utilisateur **** *****/
 
   .entrance:hover .entrance-txt {
     text-overflow: ellipsis;
@@ -781,9 +786,9 @@ h1 {
     margin-top: 5px;
   }
 
-  /***Affichage des desserts***/
+  /*** Affichage des desserts ***/
 
-  /***Titre des desserts***/
+  /**** Titre des desserts ***/
 
   .dessert-title {
     font-weight: normal;
@@ -794,7 +799,7 @@ h1 {
     border-bottom: 3px solid #99e2d0;
     width: 12%;
   }
-  /***Flex pour les 3 blocs des desserts sans le titre***/
+  /**** Flex pour les 3 blocs des desserts sans le titre ****/
 
   .dessert-presentation {
     display: flex;
@@ -834,7 +839,8 @@ h1 {
     margin-top: 5px;
   }
 
-  /***Affichage du bouton du menu entrée***/
+  /**** Aniamtion ****/
+  /*** Affichage du bouton du menu entrée ***/
 
   .menu-button {
     display: flex;
@@ -916,7 +922,7 @@ h1 {
     font-family: "Roboto", sans-serif;
   }
 
-  /******* Menu La note enchantée et test pour autres menus *******/
+  /**** **** Menu La note enchantée et les autres menus **** ****/
 
   .menu-display-enchantee {
     background-color: #f6f6f6;
@@ -927,10 +933,11 @@ h1 {
   }
 }
 
-/****Responsive Mobile 375px Taille M ****/
+/**** **** Responsive Mobile 375px Taille M **** ****/
 
 @media only screen and (min-width: 375px) {
-  /*Localisation géographique à voir en fin de résultat affichage*/
+
+  /**** Localisation géographique ****/
 
   /*Fonctionnement test sinon (button-grey et button-purple*/
   .button-txt-align {
@@ -969,7 +976,7 @@ h1 {
   }
 }
 
-/****Responsive Tablet 768px****/
+/**** **** Responsive Tablet 768px **** ****/
 
 @media only screen and (min-width: 768px) {
   /*baseline */
@@ -1000,7 +1007,7 @@ h1 {
     width: 100%;
   }
 
-  /*Functionning*/
+  /**** Functionning ****/
 
   .functioning button {
     width: 98%;
@@ -1023,7 +1030,7 @@ h1 {
     line-height: 32px;
   }
 
-  /*Restaurant*/
+  /**** Restaurant ****/
 
   .restaurant {
     height: 1750px;
@@ -1037,7 +1044,7 @@ h1 {
     height: 290px;
   }
 
-  /*Footer*/
+  /**** Footer ****/
 
   footer {
     display: flex;
@@ -1053,7 +1060,7 @@ h1 {
     padding-left: 20px;
   }
 
-  /*Affichage du menu La palette du goût*/
+  /**** Affichage du menu La palette du goût ****/
 
   .header-menu-display {
     justify-content: space-between;
@@ -1068,7 +1075,7 @@ h1 {
     padding-right: 20px;
   }
 
-  /*Menu carte Titre style*/
+  /**** Menu carte Titre style ****/
 
   .entrance-title h3 {
     width: 7%;
@@ -1081,7 +1088,7 @@ h1 {
   }
 }
 
-/****Responsive pour Laptop 1024px****/
+/**** **** Responsive pour Laptop 1024px **** ****/
 
 @media only screen and (min-width: 1024px) {
   .functioning {
@@ -1134,7 +1141,7 @@ h1 {
     padding-right: 0px;
   }
 
-  /*Restaurant*/
+  /**** Restaurant ****/
 
   .restaurant {
     height: 1065px;
@@ -1172,7 +1179,7 @@ h1 {
     height: 295px;
   }
 
-  /*Footer*/
+  /**** Footer ****/
 
   footer {
     display: flex;
@@ -1188,9 +1195,9 @@ h1 {
     margin-right: 46px;
   }
 
-  /*** Carte Menu restaurant***/
+  /**** Carte Menu restaurant ***/
 
-  /*Menu carte Titre style*/
+  /**** Menu carte Titre style ****/
 
   .entrance-title h3 {
     width: 5%;
@@ -1202,7 +1209,7 @@ h1 {
     width: 5%;
   }
 
-  /*Footer Menu Carte */
+  /**** Footer Menu Carte ***/
 
   .desktop-footer-menu {
     margin-right: 0px;
@@ -1211,7 +1218,8 @@ h1 {
 }
 
 @media only screen and (min-width: 1200px) {
-  /*Fonctionnement*/
+
+  /**** Fonctionnement ****/
 
   .functioning button {
     width: 104%;
@@ -1286,7 +1294,7 @@ h1 {
   }
 }
 
-/****Test Responsive Grands écrans d'ordinateurs valeur entre 992px - 1199px page accueil****/
+/**** Responsive Grands écrans d'ordinateurs valeur entre 992px - 1199px page accueil ****/
 /*Base de travail pour une version Laptop 1024px*/
 
 @media only screen and (min-width: 1440px) {
@@ -1370,6 +1378,9 @@ h1 {
     justify-content: space-between;
   }
 }
+
+
+/**** Ecran 4K 2560px px **** ****/
 
 @media only screen and (min-width: 2560px) {
   /*Resraurant*/
